@@ -180,7 +180,8 @@ export default function Home() {
           </StyledModal>
         </StyledContent>
       )}
-      {width <= 1024 && <Home.Mobile />}
+      {width <= 767 && <Home.Mobile />}
+      {width >= 768 && width <= 1024 && <Home.Tablet />}
     </Fragment>
   );
 }
@@ -291,7 +292,32 @@ Home.Mobile = ({ setOpenModal }) => {
         <Home.CreatorZone />
         <Home.ZoneHCP setOpenModal={setOpenModal} />
         <Home.Box />
-        <img src="/images/home/pasto-min.webp" alt="grass" className="h-[23px] absolute bottom-0" />
+        <img
+          src="/images/home/pasto-min.webp"
+          alt="grass"
+          className="h-[23px] absolute bottom-0"
+        />
+      </div>
+    </StyledContent>
+  );
+};
+
+Home.Tablet = ({ setOpenModal }) => {
+  return (
+    <StyledContent>
+      <div className="container">
+        <Home.SclerosisMultiple />
+        <Home.Tratamiento />
+        <Home.Testimonials />
+        <Home.MyHCP />
+        <Home.CreatorZone />
+        <Home.ZoneHCP setOpenModal={setOpenModal} />
+        <Home.Box />
+        <img
+          src="/images/home/pasto-min.webp"
+          alt="grass"
+          className="h-[23px] absolute bottom-0"
+        />
       </div>
     </StyledContent>
   );

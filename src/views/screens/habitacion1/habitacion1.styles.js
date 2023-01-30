@@ -26,6 +26,19 @@ export const StyledContent = styled.section`
   @media (max-width: 1024px) {
     .container {
       ${tw`w-[100%] flex justify-center h-[100%] relative max-w-full`}
+      background-image: url("/images/home/version-tablet.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      @media (max-width: 500px) {
+        ${tw`w-full h-[100%]`}
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      ${tw`w-[100%] flex justify-center h-[100%] relative max-w-full`}
       background-image: url("/images/home/cocina123.png");
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -45,6 +58,14 @@ export const StyledItem = styled.div`
   animation: ${fadeInOut} 9s ease-in-out infinite;
 
   @media (max-width: 1024px) {
+    ${tw`left-[1.3%] top-[19%] w-[57.5%] h-[58.4%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
     ${tw`left-[-3.9%] top-[26.8%] w-[57.5%] h-[45.5%]`}
 
     img {
@@ -58,6 +79,14 @@ export const StyledItemSilla = styled.div`
   animation: ${fadeInOut} 9s ease-in-out infinite;  
 
   @media (max-width: 1024px) {
+    ${tw`left-[3.8%] top-[65.4%] h-[29%] w-[33.1%]`}
+
+    img {
+      ${tw`w-[100%] h-[100%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
     ${tw`left-[-3.3%] top-[62.8%] w-[57.1%] h-[41%]`}
 
     img {
@@ -77,6 +106,14 @@ export const StyledItemCama = styled.div`
   animation: ${fadeInOut} 9s ease-in-out infinite;
 
   @media (max-width: 1024px) {
+    ${tw`left-[30%] top-[39.2%] w-[47.4%] h-[30%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
     ${tw`left-[25.8%] top-[42.5%] w-[52.9%] h-[23.8%]`}
 
     img {
@@ -90,6 +127,14 @@ export const StyledItemLampara = styled.div`
   animation: ${fadeInOut} 9s ease-in-out infinite;
 
   @media (max-width: 1024px) {
+    ${tw`left-[32.7%] top-[53.4%] w-[37.3%] h-[37.2%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
     ${tw`left-[35.7%] top-[53.4%] w-[51.3%] h-[35.2%]`}
 
     img {
@@ -101,7 +146,16 @@ export const StyledItemLampara = styled.div`
 export const StyledItemTocador = styled.div`
   ${tw`absolute w-[16.6%] left-[70.1%] top-[40.6%] cursor-pointer`}
   animation: ${fadeInOut} 9s ease-in-out infinite;
+
   @media (max-width: 1024px) {
+    ${tw`left-[69%] top-[28.3%] w-[28.3%] h-[45.7%]`}
+
+    img {
+      ${tw`w-[100%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
     ${tw`left-[69.1%] top-[36%] w-[29.3%] h-[32%]`}
 
     img {
@@ -177,4 +231,12 @@ export const StyledItemBotton5 = styled.div`
   &:hover {
     background-image: url("/images/home/boton-alianzas-5.png");
   }
+`;
+
+export const StyledColor = styled.div`
+  ${tw`w-[19%] bottom-[6px] right-[0] h-[12%] absolute  cursor-pointer`}
+`;
+
+export const StyledColor1 = styled.div`
+  ${tw`w-[19%] bottom-[6px] left-[0] h-[12%] absolute  cursor-pointer`}
 `;

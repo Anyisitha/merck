@@ -12,6 +12,21 @@ export const StyledContent = styled.section`
     background-image: url('/images/home/mobile-background.png');
 
     .container {
+      background-image: url("/images/home/casa-8.png");
+      background-size: 100% 100%;
+      ${tw`w-[80%] flex justify-center h-[80%] relative`}
+
+      @media (max-width: 500px) {
+        ${tw`mb-[6.4%]`}
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    ${tw`flex items-end pb-[17%] justify-center`}
+    background-image: url('/images/home/mobile-background.png');
+
+    .container {
       background-image: url("/images/home/mobile_house.png");
       background-size: 100% 100%;
       ${tw`w-[80%] flex justify-center h-[80%] relative`}

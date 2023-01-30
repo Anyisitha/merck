@@ -1,5 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import {
+  StyledColor,
+  StyledColor1,
   StyledContent,
   StyledItem,
   StyledItemBotton1,
@@ -98,7 +100,8 @@ export default function Habitacion1() {
         </Fragment>
       )}
 
-      {width <= 1024 && <Habitacion1.Mobile />}
+      {width <= 767 && <Habitacion1.Mobile />}
+      {width >= 768 && width <= 1024 && <Habitacion1.Tablet />}
     </StyledContent>
   );
 }
@@ -122,7 +125,47 @@ Habitacion1.Mobile = () => {
         <StyledItemTocador className="tocador">
           <img src="/images/home/tocador-movil.png" alt="" />
         </StyledItemTocador>
+        <StyledColor
+          className="puerta"
+          onClick={() => (window.location.href = "/habitacion-2")}
+        ></StyledColor>
+        <StyledColor1
+          className="puerta"
+          onClick={() => (window.location.href = "/")}
+        ></StyledColor1>
       </div>
     </Fragment>
   );
 };
+
+Habitacion1.Tablet = () => {
+  return (
+    <Fragment>
+      <div className="container">
+      <StyledItemSilla className="silla">
+          <img src="/images/home/silla-tablet.png" alt="" />
+        </StyledItemSilla>
+        <StyledItem className="esclerosis-fondo1 ">
+          <img src="/images/home/cortina-tablet-8.png" alt="" />
+        </StyledItem>
+        <StyledItemCama className="cama">
+          <img src="/images/home/cama-tablet-8.png" alt="" />
+        </StyledItemCama>
+        <StyledItemLampara className="lampara">
+          <img src="/images/home/lampara-tablet-8.png" alt="" />
+        </StyledItemLampara>
+        <StyledItemTocador className="tocador">
+          <img src="/images/home/tocador-tablet-8.png" alt="" />
+        </StyledItemTocador>
+        <StyledColor
+          className="puerta"
+          onClick={() => (window.location.href = "/habitacion-2")}
+        ></StyledColor>
+        <StyledColor1
+          className="puerta"
+          onClick={() => (window.location.href = "/")}
+        ></StyledColor1>
+      </div>
+    </Fragment>
+  )
+}

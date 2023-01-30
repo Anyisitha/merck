@@ -1,4 +1,7 @@
+import { Fragment, useEffect, useState } from "react";
 import {
+  StyledColor,
+  StyledColor1,
   StyledContent,
   StyledItemBotton1,
   StyledItemBotton2,
@@ -12,52 +15,125 @@ import {
 } from "./habitacion3.styles";
 
 export default function Habitacion3() {
+  /** States */
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, []);
+
   return (
     <StyledContent>
-      <div className="h-[88%] relative bottom-[20px] ml-[4%]">
-        <img src="/images/home/testimonial.png" alt="" className="h-full" />
+      {width > 1024 && (
+        <Fragment>
+          <div className="h-[88%] relative bottom-[20px] ml-[4%]">
+            <img src="/images/home/testimonial.png" alt="" className="h-full" />
 
-        {/* Animaciones */}
-        <StyledItemCortina className="botiquin ">
-          <img src="/images/home/sofa.png" alt="" />
-        </StyledItemCortina>
-        <StyledItemCuadroRetrato className="botiquin ">
-          <img src="/images/home/cuadro-retrato.png" alt="" />
-        </StyledItemCuadroRetrato>
+            {/* Animaciones */}
+            <StyledItemCortina className="botiquin ">
+              <img src="/images/home/sofa.png" alt="" />
+            </StyledItemCortina>
+            <StyledItemCuadroRetrato className="botiquin ">
+              <img src="/images/home/cuadro-retrato.png" alt="" />
+            </StyledItemCuadroRetrato>
 
-        {/* Puertas navegacion*/}
-        <StyledItemPuerta className="puerta" onClick={() => window.location.href = "/"}>
-          <img src="/images/home/puerta.png" alt="" />
-        </StyledItemPuerta>
-        <StyledItemSiguiente className="puerta" onClick={() => window.location.href = "/habitacion-4"}>
-          <img src="/images/home/puerta-siguiente.png" alt="" />
-        </StyledItemSiguiente>
-      </div>
-       {/* Bottom navigation */}
-       <StyledItemBotton1
-        className="puerta"
-        onClick={() => (window.location.href = "/habitacion-1")}
-      ></StyledItemBotton1>
+            {/* Puertas navegacion*/}
+            <StyledItemPuerta
+              className="puerta"
+              onClick={() => (window.location.href = "/")}
+            >
+              <img src="/images/home/puerta.png" alt="" />
+            </StyledItemPuerta>
+            <StyledItemSiguiente
+              className="puerta"
+              onClick={() => (window.location.href = "/habitacion-4")}
+            >
+              <img src="/images/home/puerta-siguiente.png" alt="" />
+            </StyledItemSiguiente>
+          </div>
 
-      <StyledItemBotton2
-        className="boton2"
-        onClick={() => (window.location.href = "/habitacion-2")}
-      ></StyledItemBotton2>
+          {/* Bottom navigation */}
+          <StyledItemBotton1
+            className="puerta"
+            onClick={() => (window.location.href = "/habitacion-1")}
+          ></StyledItemBotton1>
 
-      <StyledItemBotton3
-        className="boton2"
-        onClick={() => (window.location.href = "/habitacion-4")}
-      ></StyledItemBotton3>
+          <StyledItemBotton2
+            className="boton2"
+            onClick={() => (window.location.href = "/habitacion-2")}
+          ></StyledItemBotton2>
 
-      <StyledItemBotton4
-        className="boton2"
-        onClick={() => (window.location.href = "/habitacion-5")}
-      ></StyledItemBotton4>
+          <StyledItemBotton3
+            className="boton2"
+            onClick={() => (window.location.href = "/habitacion-4")}
+          ></StyledItemBotton3>
 
-      <StyledItemBotton5
-        className="boton2"
-        onClick={() => (window.location.href = "/alianzas")}
-      ></StyledItemBotton5>
+          <StyledItemBotton4
+            className="boton2"
+            onClick={() => (window.location.href = "/habitacion-5")}
+          ></StyledItemBotton4>
+
+          <StyledItemBotton5
+            className="boton2"
+            onClick={() => (window.location.href = "/alianzas")}
+          ></StyledItemBotton5>
+        </Fragment>
+      )}
+
+      {width <= 767 && <Habitacion3.Mobile />}
+      {width >= 768 && width <= 1024 && <Habitacion3.Tablet />}
     </StyledContent>
   );
 }
+
+Habitacion3.Mobile = () => {
+  return (
+    <Fragment>
+      <div className="container">
+        <StyledItemCortina className="botiquin ">
+          <img src="/images/home/fosa1.png" alt="" />
+        </StyledItemCortina>
+
+        <StyledItemCuadroRetrato className="botiquin ">
+          <img src="/images/home/cuadro-movil-8.png" alt="" />
+        </StyledItemCuadroRetrato>
+
+        <StyledColor
+          className="puerta"
+          onClick={() => (window.location.href = "/habitacion-4")}
+        ></StyledColor>
+
+        <StyledColor1
+          className="puerta"
+          onClick={() => (window.location.href = "/")}
+        ></StyledColor1>
+      </div>
+    </Fragment>
+  );
+};
+
+Habitacion3.Tablet = () => {
+  return (
+    <Fragment>
+      <div className="container">
+        <StyledItemCortina className="botiquin ">
+          <img src="/images/home/silla-tablet1-8.png" alt="" />
+        </StyledItemCortina>
+
+        <StyledItemCuadroRetrato className="botiquin ">
+          <img src="/images/home/cuadro-tablet-version-8.png" alt="" />
+        </StyledItemCuadroRetrato>
+
+        <StyledColor
+          className="puerta"
+          onClick={() => (window.location.href = "/habitacion-4")}
+        ></StyledColor>
+
+        <StyledColor1
+          className="puerta"
+          onClick={() => (window.location.href = "/")}
+        ></StyledColor1>
+      </div>
+    </Fragment>
+  );
+};
