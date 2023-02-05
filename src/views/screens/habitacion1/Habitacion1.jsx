@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
+import Modal from "../../components/modal";
 import {
   StyledColor,
   StyledColor1,
@@ -18,9 +19,31 @@ import {
   StyledItemTocador,
 } from "./habitacion1.styles";
 
+const urls = {
+  url_1: "https://eml.com.co/MerckPrueba/blog-1/index.html",
+  url_2: "https://eml.com.co/MerckPrueba/blog-2/index.html",
+  url_3: "https://eml.com.co/MerckPrueba/blog-3/index.html",
+  url_4: "https://eml.com.co/MerckPrueba/infografia-1/index.html",
+  url_5: "https://eml.com.co/MerckPrueba/infografia/index.html",
+};
+
 export default function Habitacion1() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+  const [url, setUrl] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+    setUrl("");
+  };
+
+  const handleOpenModal = (url) => {
+    console.log(url);
+    setOpenModalIframe(true);
+    setUrl(url);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -38,22 +61,37 @@ export default function Habitacion1() {
             />
 
             {/* Animaciones */}
-            <StyledItem className="esclerosis-fondo1 ">
+            <StyledItem
+              className="esclerosis-fondo1 "
+              onClick={() => handleOpenModal("url_1")}
+            >
               <img src="/images/home/cortina1.png" alt="" />
             </StyledItem>
-            <StyledItemSilla className="silla">
+            <StyledItemSilla
+              className="silla"
+              onClick={() => handleOpenModal("url_2")}
+            >
               <img src="/images/home/silla-ruedas.png" alt="" />
             </StyledItemSilla>
-            <StyledItemRetrato className="retrato">
+            <StyledItemRetrato
+              className="retrato"
+              onClick={() => handleOpenModal("url_3")}
+            >
               <img src="/images/home/retrato.png" alt="" />
             </StyledItemRetrato>
-            <StyledItemTocador className="tocador">
+            <StyledItemTocador
+              className="tocador"
+              onClick={() => handleOpenModal("url_4")}
+            >
               <img src="/images/home/tocador.png" alt="" />
             </StyledItemTocador>
             <StyledItemCama className="cama">
               <img src="/images/home/cama.png" alt="" />
             </StyledItemCama>
-            <StyledItemLampara className="lampara">
+            <StyledItemLampara
+              className="lampara"
+              onClick={() => handleOpenModal("url_5")}
+            >
               <img src="/images/home/lampara.png" alt="" />
             </StyledItemLampara>
 
@@ -100,31 +138,68 @@ export default function Habitacion1() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion1.Mobile />}
-      {width >= 768 && width <= 1024 && <Habitacion1.Tablet />}
+      {width <= 767 && (
+        <Habitacion1.Mobile
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      {width >= 768 && width <= 1024 && (
+        <Habitacion1.Tablet
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url={urls[url]}
+      />
     </StyledContent>
   );
 }
 
-Habitacion1.Mobile = () => {
+Habitacion1.Mobile = ({
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+}) => {
   return (
     <Fragment>
       <div className="container">
-        <StyledItemSilla className="silla">
+        <StyledItemSilla
+          className="silla"
+          onClick={() => handleOpenModal("url_2")}
+        >
           <img src="/images/home/chair_responsive.png" alt="" />
         </StyledItemSilla>
-        <StyledItem className="esclerosis-fondo1 ">
+        <StyledItem
+          className="esclerosis-fondo1"
+          onClick={() => handleOpenModal("url_1")}
+        >
           <img src="/images/home/cortina-movil.png" alt="" />
         </StyledItem>
         <StyledItemCama className="cama">
           <img src="/images/home/cama-movil.png" alt="" />
         </StyledItemCama>
-        <StyledItemLampara className="lampara">
+        <StyledItemLampara
+          className="lampara"
+          onClick={() => handleOpenModal("url_5")}
+        >
           <img src="/images/home/lampara-mobil.png" alt="" />
         </StyledItemLampara>
-        <StyledItemTocador className="tocador">
+        <StyledItemTocador
+          className="tocador"
+          onClick={() => handleOpenModal("url_4")}
+        >
           <img src="/images/home/tocador-movil.png" alt="" />
         </StyledItemTocador>
+        <StyledItemRetrato
+          className="retrato"
+          onClick={() => handleOpenModal("url_3")}
+        ></StyledItemRetrato>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
@@ -134,29 +209,42 @@ Habitacion1.Mobile = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/index.html"
+      />
     </Fragment>
   );
 };
 
-Habitacion1.Tablet = () => {
+Habitacion1.Tablet = ({
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+}) => {
   return (
     <Fragment>
       <div className="container">
-      <StyledItemSilla className="silla">
+        <StyledItemSilla className="silla" onClick={() => handleOpenModal("url_2")}>
           <img src="/images/home/silla-tablet.png" alt="" />
         </StyledItemSilla>
-        <StyledItem className="esclerosis-fondo1 ">
+        <StyledItem className="esclerosis-fondo1 " onClick={() => handleOpenModal("url_1")}>
           <img src="/images/home/cortina-tablet-8.png" alt="" />
         </StyledItem>
         <StyledItemCama className="cama">
           <img src="/images/home/cama-tablet-8.png" alt="" />
         </StyledItemCama>
-        <StyledItemLampara className="lampara">
+        <StyledItemLampara className="lampara" onClick={() => handleOpenModal("url_5")}>
           <img src="/images/home/lampara-tablet-8.png" alt="" />
         </StyledItemLampara>
-        <StyledItemTocador className="tocador">
+        <StyledItemTocador className="tocador" onClick={() => handleOpenModal("url_4")}>
           <img src="/images/home/tocador-tablet-8.png" alt="" />
         </StyledItemTocador>
+        <StyledItemRetrato
+          className="retrato"
+          onClick={() => handleOpenModal("url_3")}
+        ></StyledItemRetrato>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
@@ -166,6 +254,11 @@ Habitacion1.Tablet = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/index.html"
+      />
     </Fragment>
-  )
-}
+  );
+};

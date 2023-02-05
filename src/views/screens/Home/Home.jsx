@@ -20,6 +20,8 @@ import {
 } from "./home.styles";
 
 export default function Home() {
+
+
   /** States */
   const [openModal, setOpenModal] = useState(false);
   const [step, setStep] = useState(1);

@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+      },
+      boxShadow: {
+        "3xl": "6px 0px 5px 5px rgba(0,0,0,0.39);"
       }
     },
   },

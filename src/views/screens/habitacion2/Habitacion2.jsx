@@ -16,10 +16,22 @@ import {
   StyledGarden,
   Styledfirst,
 } from "./habitacion2.styles";
+import Modal from "../../components/modal";
 
 export default function Habitacion2() {
+
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+  };
+
+  const handleOpenModal = () => {
+    setOpenModalIframe(true);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -48,7 +60,7 @@ export default function Habitacion2() {
             <StyledItemBotiquin className="botiquin ">
               <img src="/images/home/botiquin-gif.png" alt="" />
             </StyledItemBotiquin>
-            <StyledItemLibros className="botiquin ">
+            <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
               <img src="/images/home/libros.png" alt="" />
             </StyledItemLibros>
 
@@ -95,20 +107,41 @@ export default function Habitacion2() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion2.Mobile />}
-      {width >= 768 && width <= 1024 && <Habitacion2.Tablet />}
+      {width <= 767 && (
+        <Habitacion2.Mobile
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      {width >= 768 && width <= 1024 && (
+        <Habitacion2.Tablet
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/blog-4/index.html"
+      />
     </StyledContent>
   );
 }
 
-Habitacion2.Mobile = () => {
+Habitacion2.Mobile = ({
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+}) => {
   return (
     <Fragment>
       <div className="container">
         <StyledItemBotiquin className="botiquin ">
           <img src="/images/home/botiquin-movil.png" alt="" />
         </StyledItemBotiquin>
-        <StyledItemLibros className="botiquin ">
+        <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
           <img src="/images/home/libros.png" alt="" />
         </StyledItemLibros>
         <StyledColor
@@ -132,18 +165,27 @@ Habitacion2.Mobile = () => {
           onClick={() => (window.location.href = "/botiquin")}
         ></Styledfirst>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/blog-4/index.html"
+      />
     </Fragment>
   );
 };
 
-Habitacion2.Tablet = () => {
+Habitacion2.Tablet = ({
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+}) => {
   return (
     <Fragment>
       <div className="container">
         <StyledItemBotiquin className="botiquin ">
           <img src="/images/home/botiquin-tablet-8.png" alt="" />
         </StyledItemBotiquin>
-        <StyledItemLibros className="botiquin ">
+        <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
           <img src="/images/home/libros.png" alt="" />
         </StyledItemLibros>
 
@@ -169,6 +211,11 @@ Habitacion2.Tablet = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/blog-4/index.html"
+      />
     </Fragment>
   );
 };

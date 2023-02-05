@@ -66,10 +66,10 @@ export const StyledItem = styled.div`
   }
 
   @media (max-width: 767px) {
-    ${tw`left-[-3.9%] top-[26.8%] w-[57.5%] h-[45.5%]`}
+    ${tw`left-[-5.4%] top-[26.8%] w-[52.5%] h-[33.5%]`}
 
     img {
-      ${tw`w-[88%] h-[72%]`}
+      ${tw`w-[100%] h-[100%]`}
     }
   }
 `;
@@ -99,6 +99,22 @@ export const StyledItemSilla = styled.div`
 export const StyledItemRetrato = styled.div`
   ${tw`absolute w-[15.7%] left-[41.8%] top-[35%] cursor-pointer`}
   animation: ${fadeInOut} 6s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    ${tw`left-[43%] top-[27.2%] w-[22.4%] h-[16%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
+    ${tw`left-[39.8%] top-[33.5%] w-[27.9%] h-[12.8%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
 `;
 
 export const StyledItemCama = styled.div`
