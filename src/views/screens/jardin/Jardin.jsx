@@ -33,7 +33,7 @@ export default function Jardin() {
   };
 
   const handleOpenModal = (url) => {
-    console.log(url);
+    alert(url);
     setOpenModalIframe(true);
     setUrl(url);
   };
