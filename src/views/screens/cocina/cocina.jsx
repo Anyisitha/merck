@@ -15,26 +15,18 @@ import {
 } from "./cocina.styles";
 import Modal from "../../components/modal";
 
-const urls = {
-  url_1: "https://eml.com.co/MerckPrueba/infografia4/index.html",
-};
-
 export default function Cacina() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
 
   const [openModalIframe, setOpenModalIframe] = useState(false);
-  const [url, setUrl] = useState(false);
 
   const handleCloseModal = () => {
     setOpenModalIframe(false);
-    setUrl("");
   };
 
-  const handleOpenModal = (url) => {
-    console.log(url);
+  const handleOpenModal = () => {
     setOpenModalIframe(true);
-    setUrl(url);
   };
 
   useEffect(() => {   
@@ -46,7 +38,7 @@ export default function Cacina() {
       {width > 1024 && (   
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
-            <img src="/images/home/cocina.png" alt="" className="h-full" onClick={() => handleOpenModal("url_1")} />
+            <img src="/images/home/cocina.png" alt="" className="h-full" onClick={handleOpenModal} />
             <StyledItemFuego className="cocina ">
               <div className="relative">
                 <img src="/images/home/fuego.png" alt="" />

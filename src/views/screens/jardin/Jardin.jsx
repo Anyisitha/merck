@@ -15,31 +15,23 @@ import "./jardin.css";
 import { Fragment, useEffect, useState } from "react";
 import Modal from "../../components/modal";
 
-
-const urls = {
-  url_1: "https://eml.com.co/MerckPrueba/infografia3/index.html",
-};
-
 export default function Jardin() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
 
   const [openModalIframe, setOpenModalIframe] = useState(false);
-  const [url, setUrl] = useState(false);
 
   const handleCloseModal = () => {
     setOpenModalIframe(false);
-    setUrl("");
   };
 
-  const handleOpenModal = (url) => {
-    alert(url);
+  const handleOpenModal = () => {
     setOpenModalIframe(true);
-    setUrl(url);
   };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
+    document.body.style.overflowX = "hidden"
   }, []);
 
   return (
@@ -47,7 +39,7 @@ export default function Jardin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[48px] ml-[6%]">
-            <div className="h-full" onClick={() => handleOpenModal("url_1")}>
+            <div onClick={() => handleOpenModal()}>
               <img src="/images/home/jardin.png" alt="" className="h-full" />
             </div>
 
@@ -102,7 +94,7 @@ export default function Jardin() {
       )}
 
       {width <= 767 && <Jardin.Mobile
-        handleOpenModal={handleOpenModal}
+        setOpenModalIframe={setOpenModalIframe}
         openModalIframe={openModalIframe}
         handleCloseModal={handleCloseModal}
       />}
@@ -121,13 +113,12 @@ export default function Jardin() {
 }
 
 Jardin.Mobile = (
-  handleOpenModal,
-  openModalIframe,
-  handleCloseModal,
+  { setOpenModalIframe }
 ) => {
+
   return (
     <Fragment>
-      <div className="container">
+      <div className="container overflow-hidden">
         <StyledItemTapete className="tapete ">
           <img src="/images/home/tapete.png" alt="" />
         </StyledItemTapete>
@@ -140,20 +131,19 @@ Jardin.Mobile = (
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
+        <div className="absolute top-[74%] left-[37%] bg-[red] w-[26%] h-[4%]" onClick={() => setOpenModalIframe(true)}></div>
       </div>
-      <Modal
+      {/* <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia3/index.html"
-      />
+      /> */}
     </Fragment>
   );
 };
 
 Jardin.Tablet = (
-  handleOpenModal,
-  openModalIframe,
-  handleCloseModal,
+  { handleOpenModal }
 ) => {
   return (
     <Fragment>
@@ -165,17 +155,18 @@ Jardin.Tablet = (
           <img src="/images/home/pelota.png" alt="" />
         </StyledItemPelota>
         <div className="shadow"></div>
+        <div className="absolute top-[74%] left-[37%] bg-[red] w-[26%] h-[4%]" onClick={handleOpenModal}></div>
 
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
       </div>
-      <Modal
+      {/* <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia3/index.html"
-      />
+      /> */}
     </Fragment>
   );
 };
