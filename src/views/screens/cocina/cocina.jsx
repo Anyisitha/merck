@@ -39,7 +39,7 @@ export default function Cacina() {
 
   useEffect(() => {   
     window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);
+  }, []);    
 
   return (
     <StyledContent>
