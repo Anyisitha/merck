@@ -13,10 +13,30 @@ import {
 } from "./jardin.styles";
 import "./jardin.css";
 import { Fragment, useEffect, useState } from "react";
+import Modal from "../../components/modal";
+
+
+const urls = {
+  url_1: "https://eml.com.co/MerckPrueba/infografia3/index.html",
+};
 
 export default function Jardin() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+  const [url, setUrl] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+    setUrl("");
+  };
+
+  const handleOpenModal = (url) => {
+    console.log(url);
+    setOpenModalIframe(true);
+    setUrl(url);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -27,7 +47,7 @@ export default function Jardin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[48px] ml-[6%]">
-            <img src="/images/home/jardin.png" alt="" className="h-full" />
+            <img src="/images/home/jardin.png" alt="" className="h-full" onClick={() => handleOpenModal("url_1")} />
 
             {/* Animaciones */}
             <StyledItemTapete className="tapete ">
@@ -78,13 +98,30 @@ export default function Jardin() {
         </Fragment>
       )}
 
-      {width <= 767 && <Jardin.Mobile />}
-      {width >= 768 && width <= 1024 && <Jardin.Tablet />}
+      {width <= 767 && <Jardin.Mobile
+       handleOpenModal={handleOpenModal}
+       openModalIframe={openModalIframe}
+       handleCloseModal={handleCloseModal}
+        />}
+      {width >= 768 && width <= 1024 && <Jardin.Tablet
+      handleOpenModal={handleOpenModal}
+      openModalIframe={openModalIframe}
+      handleCloseModal={handleCloseModal}
+      />}
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia3/index.html"
+      />
     </StyledContent>
   );
 }
 
-Jardin.Mobile = () => {
+Jardin.Mobile = (
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -101,11 +138,20 @@ Jardin.Mobile = () => {
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia3/index.html"
+      />
     </Fragment>
   );
 };
 
-Jardin.Tablet = () => {
+Jardin.Tablet = (
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -122,6 +168,11 @@ Jardin.Tablet = () => {
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia3/index.html"
+      />
     </Fragment>
   );
 };
