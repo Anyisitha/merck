@@ -113,9 +113,7 @@ export default function Cacina() {
 }
 
 Cacina.Mobile = (
-  handleOpenModal,
-  openModalIframe,
-  handleCloseModal,
+  {handleOpenModal}
 ) => {
   return (
     <Fragment>
@@ -127,12 +125,13 @@ Cacina.Mobile = (
         <StyledItemPollo className="pollo ">
           <img src="/images/home/pollo-asado-gif-dim.gif" alt="" />
         </StyledItemPollo>
+        <div className="absolute top-[71%] left-[49%] bg-[red] w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
       </div>
-      <Modal
+      {/* <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia4/index.html"
-      />
+      /> */}
     </Fragment>
   );
 };

@@ -26,7 +26,7 @@ export default function Jardin() {
   };
 
   const handleOpenModal = () => {
-    setOpenModalIframe(true);
+    setOpenModalIframe(true); 
   };
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Jardin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[48px] ml-[6%]">
-            <div onClick={() => handleOpenModal()}>
+            <div className="h-full" onClick={() => handleOpenModal()}>
               <img src="/images/home/jardin.png" alt="" className="h-full" />
             </div>
 
@@ -131,7 +131,7 @@ Jardin.Mobile = (
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
-        <div className="absolute top-[74%] left-[37%] bg-[red] w-[26%] h-[4%]" onClick={() => setOpenModalIframe(true)}></div>
+        <div className="absolute top-[74%] left-[37%] w-[26%] h-[4%]" onClick={() => setOpenModalIframe(true)}></div>
       </div>
       {/* <Modal
         open={openModalIframe}
