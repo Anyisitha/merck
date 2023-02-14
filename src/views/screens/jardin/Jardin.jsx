@@ -47,7 +47,10 @@ export default function Jardin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[48px] ml-[6%]">
-            <img src="/images/home/jardin.png" alt="" className="h-full" onClick={() => handleOpenModal("url_1")} />
+            <div className="h-full" onClick={() => handleOpenModal("url_1")}>
+              <img src="/images/home/jardin.png" alt="" className="h-full" />
+            </div>
+
 
             {/* Animaciones */}
             <StyledItemTapete className="tapete ">
@@ -99,14 +102,14 @@ export default function Jardin() {
       )}
 
       {width <= 767 && <Jardin.Mobile
-       handleOpenModal={handleOpenModal}
-       openModalIframe={openModalIframe}
-       handleCloseModal={handleCloseModal}
-        />}
+        handleOpenModal={handleOpenModal}
+        openModalIframe={openModalIframe}
+        handleCloseModal={handleCloseModal}
+      />}
       {width >= 768 && width <= 1024 && <Jardin.Tablet
-      handleOpenModal={handleOpenModal}
-      openModalIframe={openModalIframe}
-      handleCloseModal={handleCloseModal}
+        handleOpenModal={handleOpenModal}
+        openModalIframe={openModalIframe}
+        handleCloseModal={handleCloseModal}
       />}
       <Modal
         open={openModalIframe}
