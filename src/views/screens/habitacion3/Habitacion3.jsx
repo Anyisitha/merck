@@ -13,10 +13,21 @@ import {
   StyledItemPuerta,
   StyledItemSiguiente,
 } from "./habitacion3.styles";
+import Modal from "../../components/modal";
 
 export default function Habitacion3() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+  };
+
+  const handleOpenModal = () => {
+    setOpenModalIframe(true);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -27,11 +38,11 @@ export default function Habitacion3() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[4%]">
-            <img src="/images/home/testimonial.png" alt="" className="h-full" />
+            <img src="/images/home/testimonial.png" alt="" className="h-full"  />
 
             {/* Animaciones */}
             <StyledItemCortina className="botiquin ">
-              <img src="/images/home/sofa.png" alt="" />
+              <img src="/images/home/sofa.png" alt="" onClick={handleOpenModal} />
             </StyledItemCortina>
             <StyledItemCuadroRetrato className="botiquin ">
               <img src="/images/home/cuadro-retrato.png" alt="" />
@@ -80,13 +91,29 @@ export default function Habitacion3() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion3.Mobile />}
-      {width >= 768 && width <= 1024 && <Habitacion3.Tablet />}
+      {width <= 767 && <Habitacion3.Mobile
+        handleOpenModal={handleOpenModal}
+        openModalIframe={openModalIframe}
+        handleCloseModal={handleCloseModal}
+      />}
+      {width >= 768 && width <= 1024 && <Habitacion3.Tablet
+        handleOpenModal={handleOpenModal}
+        openModalIframe={openModalIframe}
+        handleCloseModal={handleCloseModal}
+      />}
+
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia5/index.html"
+      />
     </StyledContent>
   );
 }
 
-Habitacion3.Mobile = () => {
+Habitacion3.Mobile = (
+  {handleOpenModal}
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -107,12 +134,18 @@ Habitacion3.Mobile = () => {
           className="puerta"
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
+        <div className="absolute top-[71%] left-[49%]  w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
       </div>
     </Fragment>
   );
 };
+  
 
-Habitacion3.Tablet = () => {
+Habitacion3.Tablet = (
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -134,6 +167,12 @@ Habitacion3.Tablet = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia5/index.html"
+      />
     </Fragment>
   );
 };

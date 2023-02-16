@@ -55,7 +55,7 @@ export const StyledContent = styled.section`
 /** Imagenes animadas */
 export const StyledItem = styled.div`
   ${tw`absolute w-[25.3%] h-[7%] top-[30.8%] left-[13.5%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;
+  animation: ${fadeInOut} 15s ease-in-out infinite;
 
   @media (max-width: 1024px) {
     ${tw`left-[1.3%] top-[19%] w-[57.5%] h-[58.4%]`}
@@ -66,7 +66,7 @@ export const StyledItem = styled.div`
   }
 
   @media (max-width: 767px) {
-    ${tw`left-[-5.4%] top-[26.8%] w-[52.5%] h-[33.5%]`}
+    ${tw`left-[4.6%] top-[30.9%] w-[33.1%] h-[23.5%]`}
 
     img {
       ${tw`w-[100%] h-[100%]`}
@@ -76,7 +76,7 @@ export const StyledItem = styled.div`
 
 export const StyledItemSilla = styled.div`
   ${tw`absolute w-[17.1%] left-[5.6%] top-[60.2%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;  
+  animation: ${fadeInOut} 15s ease-in-out infinite;  
 
   @media (max-width: 1024px) {
     ${tw`left-[3.8%] top-[65.4%] h-[29%] w-[33.1%]`}
@@ -87,7 +87,7 @@ export const StyledItemSilla = styled.div`
   }
 
   @media (max-width: 767px) {
-    ${tw`left-[-3.3%] top-[62.8%] w-[57.1%] h-[41%]`}
+    ${tw`left-[4.7%] top-[64.5%] w-[39.4%] h-[31.4%]`}
 
     img {
       ${tw`w-[88%] h-[72%]`}
@@ -98,7 +98,7 @@ export const StyledItemSilla = styled.div`
 
 export const StyledItemRetrato = styled.div`
   ${tw`absolute w-[15.7%] left-[41.8%] top-[35%] cursor-pointer`}
-  animation: ${fadeInOut} 6s ease-in-out infinite;
+  animation: ${fadeInOut} 15s ease-in-out infinite;
 
   @media (max-width: 1024px) {
     ${tw`left-[43%] top-[27.2%] w-[22.4%] h-[16%]`}
@@ -119,7 +119,7 @@ export const StyledItemRetrato = styled.div`
 
 export const StyledItemCama = styled.div`
   ${tw`absolute w-[28.7%] left-[33.7%] top-[63.1%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;
+  animation: ${fadeInOut} 15s ease-in-out infinite;
 
   @media (max-width: 1024px) {
     ${tw`left-[30%] top-[39.2%] w-[47.4%] h-[30%]`}
@@ -140,7 +140,7 @@ export const StyledItemCama = styled.div`
 
 export const StyledItemLampara = styled.div`
   ${tw`absolute w-[16.7%] left-[57.8%] top-[59.1%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;
+  animation: ${fadeInOut} 15s ease-in-out infinite;
 
   @media (max-width: 1024px) {
     ${tw`left-[32.7%] top-[53.4%] w-[37.3%] h-[37.2%]`}
@@ -151,7 +151,7 @@ export const StyledItemLampara = styled.div`
   }
 
   @media (max-width: 767px) {
-    ${tw`left-[35.7%] top-[53.4%] w-[51.3%] h-[35.2%]`}
+    ${tw`left-[42.1%] top-[58.2%] w-[37.2%] h-[25.2%]`}
 
     img {
       ${tw`w-[88%] h-[72%]`}
@@ -161,7 +161,7 @@ export const StyledItemLampara = styled.div`
 
 export const StyledItemTocador = styled.div`
   ${tw`absolute w-[16.6%] left-[70.1%] top-[40.6%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;
+  animation: ${fadeInOut} 15s ease-in-out infinite;
 
   @media (max-width: 1024px) {
     ${tw`left-[69%] top-[28.3%] w-[28.3%] h-[45.7%]`}

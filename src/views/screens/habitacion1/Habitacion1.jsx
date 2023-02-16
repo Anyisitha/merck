@@ -85,15 +85,16 @@ export default function Habitacion1() {
             >
               <img src="/images/home/tocador.png" alt="" />
             </StyledItemTocador>
-            <StyledItemCama className="cama">
-              <img src="/images/home/cama.png" alt="" />
-            </StyledItemCama>
+            
             <StyledItemLampara
               className="lampara"
               onClick={() => handleOpenModal("url_5")}
             >
               <img src="/images/home/lampara.png" alt="" />
             </StyledItemLampara>
+            {/* <StyledItemCama className="cama">
+              <img src="/images/home/cama.png" alt="" />
+            </StyledItemCama> */}
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta

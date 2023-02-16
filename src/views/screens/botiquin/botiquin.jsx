@@ -6,10 +6,22 @@ import {
   StyledItemMedicamento,
   StyledItemPuerta,
 } from "./botiquin.styles";
+import Modal from "../../components/modal";
+
 
 export default function Botiquin() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+  };
+
+  const handleOpenModal = () => {
+    setOpenModalIframe(true);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -20,7 +32,7 @@ export default function Botiquin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
-            <img src="/images/home/botiquin.png" alt="" className="h-full" />
+            <img src="/images/home/botiquin.png" alt="" className="h-full" onClick={handleOpenModal} />
 
             {/* Animaciones */}
             <StyledItemCerrado className="botiquin-cerrado ">
@@ -41,13 +53,28 @@ export default function Botiquin() {
         </Fragment>
       )}
 
-      {width <= 767 && <Botiquin.Mobile />}
-      {width >= 768 && width <= 1024 && <Botiquin.Tablet />}
+      {width <= 767 && <Botiquin.Mobile
+      handleOpenModal={handleOpenModal}
+      openModalIframe={openModalIframe}
+      handleCloseModal={handleCloseModal}
+      />}
+      {width >= 768 && width <= 1024 && <Botiquin.Tablet
+      handleOpenModal={handleOpenModal}
+      openModalIframe={openModalIframe}
+      handleCloseModal={handleCloseModal}
+      />}
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia6/index.html"
+      />
     </StyledContent>
   );
 }
 
-Botiquin.Mobile = () => {
+Botiquin.Mobile = (
+  {handleOpenModal}
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -61,12 +88,17 @@ Botiquin.Mobile = () => {
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
+        <div className="absolute top-[59%] left-[56%] w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
       </div>
     </Fragment>
   );
 };
 
-Botiquin.Tablet = () => {
+Botiquin.Tablet = (
+  handleOpenModal,
+  openModalIframe,
+  handleCloseModal,
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -82,6 +114,13 @@ Botiquin.Tablet = () => {
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
       </div>
+      <Modal
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url="https://eml.com.co/MerckPrueba/infografia6/index.html"
+      />
     </Fragment>
+
+
   );
 };
