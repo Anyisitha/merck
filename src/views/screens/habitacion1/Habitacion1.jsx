@@ -66,6 +66,15 @@ export default function Habitacion1() {
     }
   }, [query1])
 
+  //modal 3
+  let query2 = new URLSearchParams(window.location.search).get("popup2");
+  
+  useEffect(() => {
+    if(query2 === "true") {
+      handleOpenModal("url_1")
+    }
+  }, [query2])
+
   return (
     <StyledContent>
       {width > 1024 && (
