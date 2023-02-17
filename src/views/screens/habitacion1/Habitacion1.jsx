@@ -49,6 +49,14 @@ export default function Habitacion1() {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
 
+  let query = new URLSearchParams(window.location.search).get("popup");
+  
+  useEffect(() => {
+    if(query === "true") {
+      handleOpenModal("url_3")
+    }
+  }, [query])
+
   return (
     <StyledContent>
       {width > 1024 && (
