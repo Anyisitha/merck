@@ -31,7 +31,15 @@ export default function Cacina() {
 
   useEffect(() => {   
     window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);    
+  }, []);   
+  
+  let query2 = new URLSearchParams(window.location.search).get("popup2");
+  
+  useEffect(() => {
+    if(query2 === "true") {
+      handleOpenModal("url_3")
+    }
+  }, [query2])
 
   return (
     <StyledContent>

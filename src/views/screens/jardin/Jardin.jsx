@@ -34,6 +34,14 @@ export default function Jardin() {
     document.body.style.overflowX = "hidden"
   }, []);
 
+  let query1 = new URLSearchParams(window.location.search).get("popup1");
+  
+  useEffect(() => {
+    if(query1 === "true") {
+      handleOpenModal("url_3")
+    }
+  }, [query1])
+
   return (
     <StyledContent>
       {width > 1024 && (
