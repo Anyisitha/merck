@@ -48,7 +48,7 @@ export default function Jardin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[48px] ml-[6%]">
-            <div className="h-full" onClick={() => handleOpenModal()}>
+            <div className="h-full" >
               <img src="/images/home/jardin.png" alt="" className="h-full" />
             </div>
 
@@ -62,7 +62,7 @@ export default function Jardin() {
             </StyledItemPelota>
 
             <StyledItemBotonInfo1 className="medicamentos ">
-              <img src="/images/home/boton-info-1.png" alt="" />
+              <img src="/images/home/boton-info-1.png" alt="" onClick={() => handleOpenModal()} />
             </StyledItemBotonInfo1>
 
             {/* Puertas navegacion*/}
@@ -172,9 +172,9 @@ Jardin.Tablet = (
           <img src="/images/home/pelota.png" alt="" />
         </StyledItemPelota>
         <div className="shadow"></div>
-        <div className="absolute top-[74%] left-[37%]  w-[26%] h-[4%]" onClick={handleOpenModal}></div>
+        <div className="absolute top-[74%] left-[37%]  w-[26%] h-[4%]" ></div>
         <StyledItemBotonInfo1 className="medicamentos ">
-              <img src="/images/home/boton-info-1.png" alt="" />
+              <img src="/images/home/boton-info-1.png" alt="" onClick={handleOpenModal} />
             </StyledItemBotonInfo1>
         <StyledColor
           className="puerta"

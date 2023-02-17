@@ -46,10 +46,10 @@ export default function Cacina() {
       {width > 1024 && (   
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
-            <img src="/images/home/cocina.png" alt="" className="h-full" onClick={handleOpenModal} />
+            <img src="/images/home/cocina.png" alt="" className="h-full" />
             <StyledItemFuego className="cocina ">
               <div className="relative">
-                <img src="/images/home/fuego.png" alt="" />
+                <img src="/images/home/fuego.png" alt=""  onClick={handleOpenModal} />
               </div>
             </StyledItemFuego>
             <StyledItemPollo className="pollo ">

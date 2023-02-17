@@ -41,7 +41,7 @@ export default function Botiquin() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
-            <img src="/images/home/botiquin.png" alt="" className="h-full" onClick={handleOpenModal} />
+            <img src="/images/home/botiquin.png" alt="" className="h-full"  />
 
             {/* Animaciones */}
             <StyledItemCerrado className="botiquin-cerrado ">
@@ -51,7 +51,7 @@ export default function Botiquin() {
               <img src="/images/home/medicamentos.png" alt="" />
             </StyledItemMedicamento>
             <StyledItemBotonInfo className="medicamentos ">
-              <img src="/images/home/boton-info.png" alt="" />
+              <img src="/images/home/boton-info.png" alt="" onClick={() => handleOpenModal(true)}/>
             </StyledItemBotonInfo>
 
             {/* Puertas navegacion*/}
@@ -96,14 +96,14 @@ Botiquin.Mobile = (
         <StyledItemCerrado className="botiquin-cerrado ">
           <img src="/images/home/pildora.gif" alt="" />
         </StyledItemCerrado>
-        <StyledItemBotonInfo className="medicamentos ">
+        <StyledItemBotonInfo className="medicamentos " onClick={() => handleOpenModal(true)}>
               <img src="/images/home/boton-info.png" alt="" />
             </StyledItemBotonInfo>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
-        <div className="absolute top-[59%] left-[56%] w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
+        <div className="absolute top-[59%] left-[56%] w-[26%] h-[4%]" ></div>
       </div>
     </Fragment>
   );
@@ -121,14 +121,14 @@ Botiquin.Tablet = (
         <StyledItemCerrado className="botiquin-cerrado ">
           <img src="/images/home/pildora.gif" alt="" />
         </StyledItemCerrado>
-        <StyledItemBotonInfo className="medicamentos ">
+        <StyledItemBotonInfo className="medicamentos " onClick={() => handleOpenModal(true)}>
               <img src="/images/home/boton-info.png" alt="" />
             </StyledItemBotonInfo>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
-        <div className="absolute top-[52%] left-[59%] w-[18%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
+        <div className="absolute top-[52%] left-[59%] w-[18%] h-[4%]" ></div>
       </div>
       {/* <Modal
         open={openModalIframe}
