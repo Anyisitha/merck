@@ -130,6 +130,7 @@ Cacina.Mobile = (
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
+        
         <StyledItemPollo className="pollo ">
           <img src="/images/home/pollo-asado-gif-dim.gif" alt="" />
         </StyledItemPollo>

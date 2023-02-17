@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import {
   StyledColor,
   StyledContent,
+  StyledItemBotonInfo,
   StyledItemCerrado,
   StyledItemMedicamento,
   StyledItemPuerta,
@@ -49,6 +50,9 @@ export default function Botiquin() {
             <StyledItemMedicamento className="medicamentos ">
               <img src="/images/home/medicamentos.png" alt="" />
             </StyledItemMedicamento>
+            <StyledItemBotonInfo className="medicamentos ">
+              <img src="/images/home/boton-info.png" alt="" />
+            </StyledItemBotonInfo>
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -92,6 +96,9 @@ Botiquin.Mobile = (
         <StyledItemCerrado className="botiquin-cerrado ">
           <img src="/images/home/pildora.gif" alt="" />
         </StyledItemCerrado>
+        <StyledItemBotonInfo className="medicamentos ">
+              <img src="/images/home/boton-info.png" alt="" />
+            </StyledItemBotonInfo>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
@@ -103,9 +110,7 @@ Botiquin.Mobile = (
 };
 
 Botiquin.Tablet = (
-  handleOpenModal,
-  openModalIframe,
-  handleCloseModal,
+  {handleOpenModal}
 ) => {
   return (
     <Fragment>
@@ -116,17 +121,20 @@ Botiquin.Tablet = (
         <StyledItemCerrado className="botiquin-cerrado ">
           <img src="/images/home/pildora.gif" alt="" />
         </StyledItemCerrado>
-
+        <StyledItemBotonInfo className="medicamentos ">
+              <img src="/images/home/boton-info.png" alt="" />
+            </StyledItemBotonInfo>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
+        <div className="absolute top-[52%] left-[59%] w-[18%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
       </div>
-      <Modal
+      {/* <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia6/index.html"
-      />
+      /> */}
     </Fragment>
 
 

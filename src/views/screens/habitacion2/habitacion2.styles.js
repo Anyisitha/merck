@@ -75,7 +75,7 @@ export const StyledItemBotiquin = styled.div`
 `;
 
 export const StyledItemLibros = styled.div`
-  ${tw`absolute  left-[25%] top-[55.5%] w-[23.6%] cursor-pointer`}
+  ${tw`absolute  left-[25.8%] top-[59.6%] w-[17.3%] cursor-pointer`}
   animation: ${fadeInOut} 8s ease-in-out infinite;
 
   @media (max-width: 1024px) {
@@ -87,7 +87,7 @@ export const StyledItemLibros = styled.div`
   }
 
   @media (max-width: 767px) {
-    ${tw`left-[15.7%] top-[45.8%] w-[58.1%] h-[30%]`}
+    ${tw`left-[23.3%] top-[54.8%] w-[36.1%] h-[13.7%]`}
 
     img {
       ${tw`w-[88%] h-[72%]`}

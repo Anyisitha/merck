@@ -93,6 +93,27 @@ export const StyledItemMedicamento = styled.div`
     }
   }
 `;
+
+export const StyledItemBotonInfo = styled.div`
+  ${tw`absolute  left-[45.5%] top-[56.6%] w-[12.1%] cursor-pointer`}
+  animation: ${fadeInOut} 15s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    ${tw`left-[59%] top-[52.1%] w-[20.5%] h-[5%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
+    ${tw`left-[57.7%] top-[59.3%] w-[25.3%] h-[4.6%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+`;
 /** Imagenes animadas */
 
 /** Navigation puertas */

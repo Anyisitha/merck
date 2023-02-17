@@ -1,6 +1,7 @@
 import {
   StyledColor,
   StyledContent,
+  StyledItemBotonInfo1,
   StyledItemBotton1,
   StyledItemBotton2,
   StyledItemBotton3,
@@ -59,6 +60,10 @@ export default function Jardin() {
             <StyledItemPelota className="tapete ">
               <img src="/images/home/pelota.png" alt="" />
             </StyledItemPelota>
+
+            <StyledItemBotonInfo1 className="medicamentos ">
+              <img src="/images/home/boton-info-1.png" alt="" />
+            </StyledItemBotonInfo1>
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -135,6 +140,10 @@ Jardin.Mobile = (
           <img src="/images/home/pelota.png" alt="" />
         </StyledItemPelota>
         <div className="shadow"></div>
+
+        <StyledItemBotonInfo1 className="medicamentos ">
+              <img src="/images/home/boton-info-1.png" alt="" />
+            </StyledItemBotonInfo1>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
@@ -163,8 +172,10 @@ Jardin.Tablet = (
           <img src="/images/home/pelota.png" alt="" />
         </StyledItemPelota>
         <div className="shadow"></div>
-        <div className="absolute top-[74%] left-[37%] bg-[red] w-[26%] h-[4%]" onClick={handleOpenModal}></div>
-
+        <div className="absolute top-[74%] left-[37%]  w-[26%] h-[4%]" onClick={handleOpenModal}></div>
+        <StyledItemBotonInfo1 className="medicamentos ">
+              <img src="/images/home/boton-info-1.png" alt="" />
+            </StyledItemBotonInfo1>
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}

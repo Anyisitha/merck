@@ -132,6 +132,27 @@ export const StyledItemPelota = styled.div`
     }
   }
 `;
+
+export const StyledItemBotonInfo1 = styled.div`
+  ${tw`absolute  left-[39.8%] top-[93.6%] w-[13.1%] cursor-pointer`}
+  animation: ${fadeInOut} 15s ease-in-out infinite;
+
+  @media (max-width: 1024px) {
+    ${tw`left-[37%] top-[74.1%] w-[29.5%] h-[5%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+
+  @media (max-width: 767px) {
+    ${tw`left-[37.7%] top-[74.3%] w-[27.3%] h-[4.6%]`}
+
+    img {
+      ${tw`w-[88%] h-[72%]`}
+    }
+  }
+`;
 /** Imagenes animadas */
 
 /** Navigation puertas */
