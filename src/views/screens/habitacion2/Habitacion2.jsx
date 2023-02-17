@@ -37,6 +37,8 @@ export default function Habitacion2() {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   }, []);
 
+  
+
   return (
     <StyledContent>
       {width > 1024 && (
