@@ -48,6 +48,9 @@ export default function Habitacion6() {
               <img src="/images/home/puerta-siguiente.png" alt="" />
             </StyledItemSiguiente>
 
+            <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[27%] h-[14%] top-[43%] left-[34%]">
+              
+            </a>
           </div>
 
           {/* Bottom navigation */}
