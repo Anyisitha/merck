@@ -34,12 +34,14 @@ export default function Habitacion4() {
             <StyledItemLibros className="botiquin ">
               <img src="/images/home/recursos.png" alt="" />
             </StyledItemLibros>
-            <StyledItemPc className="botiquin ">
+            {/* <StyledItemPc className="botiquin ">
               <img src="/images/home/pc.png" alt="" />
-            </StyledItemPc>
+            </StyledItemPc> */}
             <StyledItemHojas className="botiquin ">
               <img src="/images/home/hojas.png" alt="" />
             </StyledItemHojas>
+            <a href="" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
+            <a href="" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -94,9 +96,12 @@ Habitacion4.Mobile = () => {
   return (
     <Fragment>
       <div className="container">
-        <StyledItemPc className="botiquin ">
+        {/* <StyledItemPc className="botiquin ">
           <img src="/images/home/pc.png" alt="" />
-        </StyledItemPc>
+        </StyledItemPc> */}
+
+          <a href="" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
+          <a href="" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
 
         <StyledColor
           className="puerta"
@@ -116,9 +121,12 @@ Habitacion4.Tablet = () => {
   return (
     <Fragment>
       <div className="container">
-        <StyledItemPc className="botiquin ">
+        {/* <StyledItemPc className="botiquin ">
           <img src="/images/home/tv-tablet-8.png" alt="" />
-        </StyledItemPc>
+        </StyledItemPc> */}
+
+<a href="" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
+            <a href="" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
 
         <StyledColor
           className="puerta"

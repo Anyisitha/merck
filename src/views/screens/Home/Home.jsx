@@ -242,9 +242,7 @@ Home.MyHCP = () => {
 
 Home.CreatorZone = () => {
   return (
-    <StyledContentExperenceCreator
-      onClick={() => (window.location.href = "/habitacion-5")}
-    >
+    <StyledContentExperenceCreator href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank">
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">Creador de experiencias</StyledTitle>
@@ -256,11 +254,11 @@ Home.CreatorZone = () => {
 
 Home.ZoneHCP = ({ setOpenModal }) => {
   return (
-    <StyledContentRegister href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank">
+    <StyledContentRegister>
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">
-          Creador de experiencias
+          
           </StyledTitle>
         </div>
       </div>
