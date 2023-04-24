@@ -262,7 +262,7 @@ Home.ZoneHCP = ({ setOpenModal }) => {
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">
-          Asociaciones de pacientes
+          Rutas de pacientes
           </StyledTitle>
         </div>
       </div>
