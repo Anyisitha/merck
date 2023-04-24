@@ -190,7 +190,7 @@ export default function Home() {
 
 Home.SclerosisMultiple = () => {
   return (
-    <StyledContentSclerosis>
+    <StyledContentSclerosis onClick={() => (window.location.href = "/habitacion-1")}>
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">Esclerosis múltiple</StyledTitle>
@@ -221,7 +221,7 @@ Home.Testimonials = () => {
     >
       <div className="parent">
         <div className="child">
-          <StyledTitle className="trata">Testimoniales</StyledTitle>
+          <StyledTitle className="trata">Viviendo con esclerosis </StyledTitle>
         </div>
       </div>
     </StyledContentTestimonials>
@@ -242,7 +242,9 @@ Home.MyHCP = () => {
 
 Home.CreatorZone = () => {
   return (
-    <StyledContentExperenceCreator href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank">
+    <StyledContentExperenceCreator
+    onClick={() => (window.location.href = "/habitacion-5")}
+    >
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">Creador de experiencias</StyledTitle>
@@ -254,11 +256,13 @@ Home.CreatorZone = () => {
 
 Home.ZoneHCP = ({ setOpenModal }) => {
   return (
-    <StyledContentRegister>
+    <StyledContentRegister
+    onClick={() => (window.location.href = "/habitacion-6")}
+    >
       <div className="parent">
         <div className="child">
           <StyledTitle className="trata">
-          
+          Asociaciones de pacientes
           </StyledTitle>
         </div>
       </div>

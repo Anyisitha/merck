@@ -173,7 +173,7 @@ export const StyledContentHCP = styled.div`
   }
 `;
 
-export const StyledContentExperenceCreator = styled.a`
+export const StyledContentExperenceCreator = styled.div`
   ${tw`w-[34.4%] h-[21.5%] absolute top-[68.5%] left-[9%] flex justify-center items-center cursor-pointer`}
 
   @media (max-width: 1024px) {
@@ -215,7 +215,7 @@ export const StyledContentExperenceCreator = styled.a`
   }
 `;
 
-export const StyledContentRegister = styled.a`
+export const StyledContentRegister = styled.div`
   ${tw`w-[37.1%] h-[21.5%] absolute top-[68.5%] left-[44.2%] flex justify-center items-center cursor-pointer`}
 
   @media (max-width: 1024px) {

@@ -17,9 +17,9 @@ import {
   StyledItemSiguiente,
   StyledItemTv,
   StyledItemTv1,
-} from "./habitacion5.styles";
+} from "./habitacion6.styles";
 
-export default function Habitacion5() {
+export default function Habitacion6() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -32,7 +32,7 @@ export default function Habitacion5() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
-            <img src="/images/home/c-creador.png" alt="" className="h-full" />
+            <img src="/images/home/c-logos-1.png" alt="" className="h-full" />
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -48,33 +48,6 @@ export default function Habitacion5() {
               <img src="/images/home/puerta-siguiente.png" alt="" />
             </StyledItemSiguiente>
 
-            {/* Animaciones */}
-            <StyledItemTv className="mueble ">
-              <img src="/images/home/mueble.png" alt="" />
-            </StyledItemTv>
-
-            <StyledItemFarol className="farol ">
-              <img src="/images/home/farol.png" alt="" />
-            </StyledItemFarol>
-
-            <StyledItemFarol1 className="farol ">
-              <img src="/images/home/farol_1.png" alt="" />
-            </StyledItemFarol1>
-
-            <StyledItemPantalla className="pantalla ">
-              <img src="/images/home/pantalla.png" alt="" />
-            </StyledItemPantalla>
-
-            <StyledItemMueble className="GAMEOVER ">
-              <img src="/images/home/GAMEOVER.gif" alt="" />
-            </StyledItemMueble>
-
-            <StyledItemRecor className="mueble ">
-              <img src="/images/home/tunes.webp" alt="" />
-            </StyledItemRecor>
-            <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[10%] h-[5%] top-[62%] left-[54%]">
-              Jugar
-            </a>
           </div>
 
           {/* Bottom navigation */}
@@ -105,33 +78,17 @@ export default function Habitacion5() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion5.Mobile />}
-      {width >= 768 && width <= 1024 && <Habitacion5.Tablet />}
+      {width <= 767 && <Habitacion6.Mobile />}
+      {width >= 768 && width <= 1024 && <Habitacion6.Tablet />}
     </StyledContent>
   );
 }
 
-Habitacion5.Mobile = () => {
+Habitacion6.Mobile = () => {
   return (
     <Fragment>
       <div className="container">
-
-        <StyledItemPantalla className="pantalla ">
-          <img src="/images/home/pantalla.png" alt="" />
-        </StyledItemPantalla>
-
-        <StyledItemMueble className="GAMEOVER ">
-          <img src="/images/home/GAMEOVER.gif" alt="" />
-        </StyledItemMueble>
-
-        <StyledItemRecor className="mueble ">
-          <img src="/images/home/tunes.webp" alt="" />
-        </StyledItemRecor>
-
-        <StyledItemTv1 className="mueble1">
-          <img src="/images/home/mueble1.png" alt="" />
-        </StyledItemTv1>
-
+        
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/")}
@@ -141,25 +98,16 @@ Habitacion5.Mobile = () => {
           className="puerta"
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
-        <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[51%] left-[71%]">
-              Jugar
-            </a>
       </div>
-      
     </Fragment>
   );
 };
 
-Habitacion5.Tablet = () => {
+Habitacion6.Tablet = () => {
   return (
     <Fragment>
       <div className="container">
-      <StyledItemMueble className="GAMEOVER ">
-          <img src="/images/home/GAMEOVER.gif" alt="" />
-        </StyledItemMueble>
-        <StyledItemRecor className="mueble ">
-          <img src="/images/home/tunes.webp" alt="" />
-        </StyledItemRecor>
+      
 
         <StyledColor
           className="puerta"
@@ -170,10 +118,6 @@ Habitacion5.Tablet = () => {
           className="puerta"
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
-
-<a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[43%] left-[68%]">
-              Jugar
-            </a>
       </div>
     </Fragment>
   );

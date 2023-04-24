@@ -6,7 +6,7 @@ import AnonymousRoute from "./AnonymousRoute";
 export default function useAnonymousRoute() {
     /** Screens */
     const { useScreens } = useViews();
-    const { Home, Habitacion1, Habitacion2, Habitacion3, Habitacion4, Habitacion5, Cocina, Jardin, Botiquin, Alianzas, Zonahcp } = useScreens();
+    const { Home, Habitacion1, Habitacion2, Habitacion3, Habitacion4, Habitacion5, Habitacion6, Cocina, Jardin, Botiquin, Alianzas, Zonahcp } = useScreens();
     
 
     /** Variables */
@@ -40,6 +40,11 @@ export default function useAnonymousRoute() {
             path: "/habitacion-5",
             exact: true,
             component: Habitacion5
+        },
+        {
+            path: "/habitacion-6",
+            exact: true,
+            component: Habitacion6
         },
         {
             path: "/cocina",
