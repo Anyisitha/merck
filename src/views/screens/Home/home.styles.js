@@ -39,7 +39,7 @@ export const StyledContent = styled.section`
 `;
 
 export const StyledTitle = styled.h1`
-  ${tw`text-[30px] text-white font-medium`}
+  ${tw`text-[28px] text-white font-medium`}
   text-shadow: 2px 2px #00000050;
 `;
 

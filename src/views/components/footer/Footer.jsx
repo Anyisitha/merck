@@ -22,9 +22,9 @@ export default function Footer() {
             </div> */}
           </div>
           <div className="flex gap-[25px]">
-              <span className="text-[8px]">Terminos y condiciones</span>
-              <span className="text-[8px]">Declaracion de privacidad</span>
-              <span className="text-[8px]">Politicas de cookies</span>
+              <a target="_blank" href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf" className="text-[8px]">Terminos y condiciones</a>
+              <a target="_blank" href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" className="text-[8px]">Declaracion de privacidad</a>
+              <a target="_blank" href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" className="text-[8px]">Politicas de cookies</a>
             </div>
           {/* <p className="text-center lg:w-[60%] w-[85%] text-[8px] font-light text-small">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
