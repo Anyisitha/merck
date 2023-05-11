@@ -46,10 +46,11 @@ export default function Home() {
             alt="pasto"
             className="absolute bottom-[8%] w-[77%] left-[7%]"
           />
-          <div
-            className="alianzas absolute w-[11%] h-[15%] top-[63%] right-[1.7%] cursor-pointer"
-            onClick={() => (window.location.href = "/alianzas")}
-          ></div>
+          <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
+            className="alianzas  absolute w-[6%] h-[11%] top-[31%] left-[2.7%]"
+            
+          ></a>
+          
 
           <StyledModal isOpen={openModal}>
             <a href="/">
@@ -233,7 +234,7 @@ Home.MyHCP = () => {
     <StyledContentHCP onClick={() => (window.location.href = "/habitacion-4")}>
       <div className="parent">
         <div className="child">
-          <StyledTitle className="trata">Mi HCP</StyledTitle>
+          <StyledTitle className="trata">Encuentra un especialista</StyledTitle>
         </div>
       </div>
     </StyledContentHCP>
@@ -243,7 +244,7 @@ Home.MyHCP = () => {
 Home.CreatorZone = () => {
   return (
     <StyledContentExperenceCreator
-    onClick={() => (window.location.href = "/habitacion-5")}
+   
     >
       <div className="parent">
         <div className="child">
@@ -272,14 +273,14 @@ Home.ZoneHCP = ({ setOpenModal }) => {
 
 Home.Box = () => {
   return (
-    <img
-      className="absolute bottom-[-14%] right-[-9%] cursor-pointer z-[1]"
-      src="/images/home/box.png"
-      alt="Box"
-      width={107}
-      height={136}
-      onClick={() => (window.location.href = "/alianzas")}
-    />
+    // <img
+    //   className="absolute bottom-[-14%] right-[-9%] cursor-pointer z-[1]"
+    //   src="/images/home/box.png"
+    //   alt="Box"
+    //   width={107}
+    //   height={136}
+    // />
+    <span></span>
   );
 };
 
@@ -300,6 +301,11 @@ Home.Mobile = ({ setOpenModal }) => {
           className="h-[23px] absolute bottom-0"
         />
       </div>
+
+      <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
+            className="alianzas  absolute w-[12%] h-[11%] top-[27%] left-[2.7%]"
+            
+          ></a>
     </StyledContent>
   );
 };
@@ -321,6 +327,10 @@ Home.Tablet = ({ setOpenModal }) => {
           className="h-[23px] absolute bottom-0"
         />
       </div>
+      <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
+            className="alianzas  absolute w-[12%] h-[11%] top-[27%] left-[2.7%]"
+            
+          ></a>
     </StyledContent>
   );
 };

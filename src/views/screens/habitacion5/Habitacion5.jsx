@@ -93,7 +93,7 @@ export default function Habitacion5() {
             onClick={() => (window.location.href = "/habitacion-4")}
           ></StyledItemBotton3>
 
-          <StyledItemBotton4
+          {/* <StyledItemBotton4
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-5")}
           ></StyledItemBotton4>
@@ -101,7 +101,7 @@ export default function Habitacion5() {
           <StyledItemBotton5
             className="boton2"
             onClick={() => (window.location.href = "/alianzas")}
-          ></StyledItemBotton5>
+          ></StyledItemBotton5> */}
         </Fragment>
       )}
 

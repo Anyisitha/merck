@@ -29,7 +29,32 @@ const Modal = ({ url, open, onClose }) => {
                     allowfullscreen
                   ></StyledIframe>
                 </StyledContentModal>
-                <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+                <div class="bg-gray-50 px-4 py-3 sm:flex sm:justify-between items-center sm:px-6">
+                  <div>
+                    <div className="flex gap-[25px]">
+                      <a
+                        target="_blank"
+                        href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf"
+                        className="text-[12px] text-[#512583] font-semibold"
+                      >
+                        Terminos y condiciones
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://eml.com.co/merck/Politica%20pirvacidad.pdf"
+                        className="text-[12px] text-[#512583] font-semibold"
+                      >
+                        Declaracion de privacidad
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf"
+                        className="text-[12px] text-[#512583] font-semibold"
+                      >
+                        Politicas de cookies
+                      </a>
+                    </div>
+                  </div>
                   <button
                     onClick={onClose}
                     type="button"

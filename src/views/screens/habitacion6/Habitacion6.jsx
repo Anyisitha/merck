@@ -69,7 +69,7 @@ export default function Habitacion6() {
             onClick={() => (window.location.href = "/habitacion-4")}
           ></StyledItemBotton3>
 
-          <StyledItemBotton4
+          {/* <StyledItemBotton4
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-5")}
           ></StyledItemBotton4>
@@ -77,7 +77,7 @@ export default function Habitacion6() {
           <StyledItemBotton5
             className="boton2"
             onClick={() => (window.location.href = "/alianzas")}
-          ></StyledItemBotton5>
+          ></StyledItemBotton5> */}
         </Fragment>
       )}
 
@@ -102,6 +102,11 @@ Habitacion6.Mobile = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+
+      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
+              
+              </a>
+      
     </Fragment>
   );
 };
@@ -122,6 +127,9 @@ Habitacion6.Tablet = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
       </div>
+
+      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
+             </a>
     </Fragment>
   );
 };

@@ -21,11 +21,43 @@ export default function Footer() {
               <span className="text-[8px]">Politicas de cookies</span>
             </div> */}
           </div>
-          <div className="flex gap-[25px]">
-              <a target="_blank" href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf" className="text-[8px]">Terminos y condiciones</a>
-              <a target="_blank" href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" className="text-[8px]">Declaracion de privacidad</a>
-              <a target="_blank" href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" className="text-[8px]">Politicas de cookies</a>
+
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center">
+              <p className="w-[80%] text-center text-[8px] mb-[10px] hola">
+                Este sitio web es propiedad de Grupo Merck en el país que usted
+                reside. Su contenido ha sido diseñado exclusivamente para
+                residentes en Ecuador, Colombia. En ningún caso la información
+                contenida en la misma sustituye la consulta, el tratamiento y
+                las recomendaciones del profesional de la salud. Conozca más
+                sobre MERCK en <a href="https://www.merckgroup.com/de" target="_blank">www.merckgroup.com/de</a> 2023 /Grupo Merck © Todos
+                los derechos reservados. CO-NONNI-00160
+              </p>
             </div>
+            <div className="flex gap-[25px]">
+              <a
+                target="_blank"
+                href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf"
+                className="text-[8px]"
+              >
+                Terminos y condiciones
+              </a>
+              <a
+                target="_blank"
+                href="https://eml.com.co/merck/Politica%20pirvacidad.pdf"
+                className="text-[8px]"
+              >
+                Declaracion de privacidad
+              </a>
+              <a
+                target="_blank"
+                href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf"
+                className="text-[8px]"
+              >
+                Politicas de cookies
+              </a>
+            </div>
+          </div>
           {/* <p className="text-center lg:w-[60%] w-[85%] text-[8px] font-light text-small">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

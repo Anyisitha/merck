@@ -39,7 +39,7 @@ export const StyledContent = styled.section`
 `;
 
 export const StyledTitle = styled.h1`
-  ${tw`text-[28px] text-white font-medium`}
+  ${tw`text-[22px] text-white font-medium`}
   text-shadow: 2px 2px #00000050;
 `;
 
@@ -150,7 +150,7 @@ export const StyledContentHCP = styled.div`
     .parent {
       .child {
         h1 {
-          ${tw`text-[10px]`}
+          ${tw`text-[9px]`}
         }
       }
     }

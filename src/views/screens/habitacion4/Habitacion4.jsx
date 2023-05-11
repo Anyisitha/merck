@@ -40,8 +40,8 @@ export default function Habitacion4() {
             <StyledItemHojas className="botiquin ">
               <img src="/images/home/hojas.png" alt="" />
             </StyledItemHojas>
-            <a href="" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
-            <a href="" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -52,7 +52,7 @@ export default function Habitacion4() {
             </StyledItemPuerta>
             <StyledItemSiguiente
               className="puerta"
-              onClick={() => (window.location.href = "/habitacion-5")}
+              onClick={() => (window.location.href = "/habitacion-6")}
             >
               <img src="/images/home/puerta-siguiente.png" alt="" />
             </StyledItemSiguiente>
@@ -73,8 +73,13 @@ export default function Habitacion4() {
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-4")}
           ></StyledItemBotton3>
-
           <StyledItemBotton4
+            className="boton2"
+            onClick={() => (window.location.href = "/habitacion-6")}
+          ></StyledItemBotton4>
+
+
+          {/* <StyledItemBotton4
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-5")}
           ></StyledItemBotton4>
@@ -82,7 +87,7 @@ export default function Habitacion4() {
           <StyledItemBotton5
             className="boton2"
             onClick={() => (window.location.href = "/alianzas")}
-          ></StyledItemBotton5>
+          ></StyledItemBotton5> */}
         </Fragment>
       )}
 
@@ -100,8 +105,8 @@ Habitacion4.Mobile = () => {
           <img src="/images/home/pc.png" alt="" />
         </StyledItemPc> */}
 
-          <a href="" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
-          <a href="" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
+          <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
+          <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
 
         <StyledColor
           className="puerta"
@@ -125,8 +130,8 @@ Habitacion4.Tablet = () => {
           <img src="/images/home/tv-tablet-8.png" alt="" />
         </StyledItemPc> */}
 
-<a href="" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
-            <a href="" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
 
         <StyledColor
           className="puerta"
