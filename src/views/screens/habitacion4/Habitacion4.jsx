@@ -40,8 +40,8 @@ export default function Habitacion4() {
             <StyledItemHojas className="botiquin ">
               <img src="/images/home/hojas.png" alt="" />
             </StyledItemHojas>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -105,8 +105,8 @@ Habitacion4.Mobile = () => {
           <img src="/images/home/pc.png" alt="" />
         </StyledItemPc> */}
 
-          <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
-          <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
+          <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
+          <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
 
         <StyledColor
           className="puerta"
@@ -130,8 +130,8 @@ Habitacion4.Tablet = () => {
           <img src="/images/home/tv-tablet-8.png" alt="" />
         </StyledItemPc> */}
 
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Colombia/@4.6046202,-74.1432298,14z/data=!3m1!4b1?hl=es" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+de+Ecuador,+Guayaquil,+Ecuador/@-2.1734336,-79.9285353,13.14z?hl=es" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
+            <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
 
         <StyledColor
           className="puerta"
