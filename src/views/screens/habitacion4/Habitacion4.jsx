@@ -14,10 +14,26 @@ import {
   StyledItemPuerta,
   StyledItemSiguiente,
 } from "./habitacion4.styles";
+import ModalImage from "../../components/modal-image";
+
 
 export default function Habitacion4() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
+
+  const [openModalIframe, setOpenModalIframe] = useState(false);
+  const [url, seturl] = useState("");
+  const [urlevent, seturlevent] = useState("");
+
+  const handleCloseModal = () => {
+    setOpenModalIframe(false);
+  };
+
+  const handleOpenModal = (url, event) => {
+    seturlevent(event)
+    seturl(url);
+    setOpenModalIframe(true);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -40,8 +56,19 @@ export default function Habitacion4() {
             <StyledItemHojas className="botiquin ">
               <img src="/images/home/hojas.png" alt="" />
             </StyledItemHojas>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%]"></a>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%]"></a>
+
+            {/* modal */}
+            <div
+              onClick={() => handleOpenModal("/col.png", "https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z")}
+              className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%] "
+            ></div>
+
+            <div
+              onClick={() => handleOpenModal("/ecu.png", "https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1")}
+              className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%] "
+            ></div>
+
+            {/* modal */}
 
             {/* Puertas navegacion*/}
             <StyledItemPuerta
@@ -78,7 +105,6 @@ export default function Habitacion4() {
             onClick={() => (window.location.href = "/habitacion-6")}
           ></StyledItemBotton4>
 
-
           {/* <StyledItemBotton4
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-5")}
@@ -93,6 +119,13 @@ export default function Habitacion4() {
 
       {width <= 767 && <Habitacion4.Mobile />}
       {width >= 768 && width <= 1024 && <Habitacion4.Tablet />}
+
+      <ModalImage
+        open={openModalIframe}
+        onClose={handleCloseModal}
+        url={url}
+        urlevent={urlevent}
+      />
     </StyledContent>
   );
 }
@@ -105,8 +138,16 @@ Habitacion4.Mobile = () => {
           <img src="/images/home/pc.png" alt="" />
         </StyledItemPc> */}
 
-          <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"></a>
-          <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"></a>
+        <a
+          href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
+          target="_blank"
+          className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"
+        ></a>
+        <a
+          href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
+          target="_blank"
+          className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"
+        ></a>
 
         <StyledColor
           className="puerta"
@@ -130,8 +171,16 @@ Habitacion4.Tablet = () => {
           <img src="/images/home/tv-tablet-8.png" alt="" />
         </StyledItemPc> */}
 
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"></a>
-            <a href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1" target="_blank" className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"></a>
+        <a
+          href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
+          target="_blank"
+          className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"
+        ></a>
+        <a
+          href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
+          target="_blank"
+          className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"
+        ></a>
 
         <StyledColor
           className="puerta"
