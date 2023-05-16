@@ -16,7 +16,6 @@ import {
 } from "./habitacion4.styles";
 import ModalImage from "../../components/modal-image";
 
-
 export default function Habitacion4() {
   /** States */
   const [width, setWidth] = useState(window.innerWidth);
@@ -30,7 +29,7 @@ export default function Habitacion4() {
   };
 
   const handleOpenModal = (url, event) => {
-    seturlevent(event)
+    seturlevent(event);
     seturl(url);
     setOpenModalIframe(true);
   };
@@ -59,12 +58,22 @@ export default function Habitacion4() {
 
             {/* modal */}
             <div
-              onClick={() => handleOpenModal("/col.png", "https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z")}
+              onClick={() =>
+                handleOpenModal(
+                  "/col.png",
+                  "https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
+                )
+              }
               className="absolute w-[10.4%] h-[6%] top-[43%] left-[37%] "
             ></div>
 
             <div
-              onClick={() => handleOpenModal("/ecu.png", "https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1")}
+              onClick={() =>
+                handleOpenModal(
+                  "/ecu.png",
+                  "https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
+                )
+              }
               className="absolute w-[11.4%] h-[7%] top-[43%] left-[50%] "
             ></div>
 
@@ -117,8 +126,9 @@ export default function Habitacion4() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion4.Mobile />}
-      {width >= 768 && width <= 1024 && <Habitacion4.Tablet />}
+
+      {width <= 767 && <Habitacion4.Mobile handleOpenModal={handleOpenModal} />}
+      {width >= 768 && width <= 1024 && <Habitacion4.Tablet handleOpenModal={handleOpenModal}  />}
 
       <ModalImage
         open={openModalIframe}
@@ -130,7 +140,9 @@ export default function Habitacion4() {
   );
 }
 
-Habitacion4.Mobile = () => {
+Habitacion4.Mobile = ({
+  handleOpenModal
+}) => {
   return (
     <Fragment>
       <div className="container">
@@ -138,16 +150,28 @@ Habitacion4.Mobile = () => {
           <img src="/images/home/pc.png" alt="" />
         </StyledItemPc> */}
 
-        <a
-          href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
-          target="_blank"
-          className=" absolute w-[29.4%] h-[5%] top-[37%] left-[32%]"
-        ></a>
-        <a
-          href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
-          target="_blank"
-          className=" absolute w-[26.4%] h-[5%] top-[43%] left-[32%]"
-        ></a>
+        {/* modal */}
+        <div
+          onClick={() =>
+            handleOpenModal(
+              "/col.png",
+              "https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
+            )
+          }
+          className="absolute w-[27.4%] h-[5%] top-[37%] left-[32%]"
+        ></div>
+
+        <div
+          onClick={() =>
+            handleOpenModal(
+              "/ecu.png",
+              "https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
+            )
+          }
+          className="absolute w-[27.4%] h-[5%] top-[43%] left-[32%]"
+        ></div>
+
+        {/* modal */}
 
         <StyledColor
           className="puerta"
@@ -163,7 +187,11 @@ Habitacion4.Mobile = () => {
   );
 };
 
-Habitacion4.Tablet = () => {
+Habitacion4.Tablet = (
+  {
+    handleOpenModal
+  }
+) => {
   return (
     <Fragment>
       <div className="container">
@@ -171,16 +199,28 @@ Habitacion4.Tablet = () => {
           <img src="/images/home/tv-tablet-8.png" alt="" />
         </StyledItemPc> */}
 
-        <a
-          href="https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
-          target="_blank"
-          className=" absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"
-        ></a>
-        <a
-          href="https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
-          target="_blank"
-          className=" absolute w-[30.4%] h-[7%] top-[33.1%] left-[35%]"
-        ></a>
+        {/* modal */}
+        <div
+          onClick={() =>
+            handleOpenModal(
+              "/col.png",
+              "https://www.google.com/maps/search/neur%C3%B3logo/@4.4222584,-74.5660229,6.5z"
+            )
+          }
+          className="absolute w-[30.4%] h-[7%] top-[25%] left-[35%]"
+        ></div>
+
+        <div
+          onClick={() =>
+            handleOpenModal(
+              "/ecu.png",
+              "https://www.google.com/maps/search/neur%C3%B3logo+cerca+de+Ecuador/@-1.1887323,-80.6097693,8z/data=!3m1!4b1"
+            )
+          }
+          className="absolute w-[30.4%] h-[7%] top-[33%] left-[35%] "
+        ></div>
+
+        {/* modal */}
 
         <StyledColor
           className="puerta"
