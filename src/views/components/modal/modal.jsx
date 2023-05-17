@@ -34,7 +34,7 @@ const Modal = ({ url, open, onClose }) => {
                     <div className="flex gap-[25px]">
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf"
+                        href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf"
                         className="text-[12px] text-[#512583] font-semibold"
                       >
                         Terminos y condiciones
