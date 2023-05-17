@@ -91,32 +91,32 @@ export default function Habitacion1() {
               className="esclerosis-fondo1 "
               onClick={() => handleOpenModal("url_1")}
             >
-              <img src="/images/home/cortina1.png" alt="" />
+              {/* <img src="/images/home/cortina1.png" alt="" /> */}
             </StyledItem>
             <StyledItemSilla
               className="silla"
               onClick={() => handleOpenModal("url_2")}
             >
-              <img src="/images/home/silla-ruedas.png" alt="" />
+              {/* <img src="/images/home/silla-ruedas.png" alt="" /> */}
             </StyledItemSilla>
             <StyledItemRetrato
               className="retrato"
               onClick={() => handleOpenModal("url_3")}
             >
-              <img src="/images/home/retrato.png" alt="" />
+              {/* <img src="/images/home/retrato.png" alt="" /> */}
             </StyledItemRetrato>
             <StyledItemTocador
               className="tocador"
               onClick={() => handleOpenModal("url_4")}
             >
-              <img src="/images/home/tocador.png" alt="" />
+              {/* <img src="/images/home/tocador.png" alt="" /> */}
             </StyledItemTocador>
             
             <StyledItemLampara
               className="lampara"
               onClick={() => handleOpenModal("url_5")}
             >
-              <img src="/images/home/lampara.png" alt="" />
+              {/* <img src="/images/home/lampara.png" alt="" /> */}
             </StyledItemLampara>
             {/* <StyledItemCama className="cama">
               <img src="/images/home/cama.png" alt="" />
@@ -204,28 +204,28 @@ Habitacion1.Mobile = ({
           className="silla"
           onClick={() => handleOpenModal("url_2")}
         >
-          <img src="/images/home/chair_responsive.png" alt="" />
+          {/* <img src="/images/home/chair_responsive.png" alt="" /> */}
         </StyledItemSilla>
         <StyledItem
           className="esclerosis-fondo1"
           onClick={() => handleOpenModal("url_1")}
         >
-          <img src="/images/home/cortina-movil.png" alt="" />
+          {/* <img src="/images/home/cortina-movil.png" alt="" /> */}
         </StyledItem>
         <StyledItemCama className="cama">
-          <img src="/images/home/cama-movil.png" alt="" />
+          {/* <img src="/images/home/cama-movil.png" alt="" /> */}
         </StyledItemCama>
         <StyledItemLampara
           className="lampara"
           onClick={() => handleOpenModal("url_5")}
         >
-          <img src="/images/home/lampara-mobil.png" alt="" />
+          {/* <img src="/images/home/lampara-mobil.png" alt="" /> */}
         </StyledItemLampara>
         <StyledItemTocador
           className="tocador"
           onClick={() => handleOpenModal("url_4")}
         >
-          <img src="/images/home/tocador-movil.png" alt="" />
+          {/* <img src="/images/home/tocador-movil.png" alt="" /> */}
         </StyledItemTocador>
         <StyledItemRetrato
           className="retrato"
@@ -258,19 +258,19 @@ Habitacion1.Tablet = ({
     <Fragment>
       <div className="container">
         <StyledItemSilla className="silla" onClick={() => handleOpenModal("url_2")}>
-          <img src="/images/home/silla-tablet.png" alt="" />
+          {/* <img src="/images/home/silla-tablet.png" alt="" /> */}
         </StyledItemSilla>
         <StyledItem className="esclerosis-fondo1 " onClick={() => handleOpenModal("url_1")}>
-          <img src="/images/home/cortina-tablet-8.png" alt="" />
+          {/* <img src="/images/home/cortina-tablet-8.png" alt="" /> */}
         </StyledItem>
         <StyledItemCama className="cama">
-          <img src="/images/home/cama-tablet-8.png" alt="" />
+          {/* <img src="/images/home/cama-tablet-8.png" alt="" /> */}
         </StyledItemCama>
         <StyledItemLampara className="lampara" onClick={() => handleOpenModal("url_5")}>
-          <img src="/images/home/lampara-tablet-8.png" alt="" />
+          {/* <img src="/images/home/lampara-tablet-8.png" alt="" /> */}
         </StyledItemLampara>
         <StyledItemTocador className="tocador" onClick={() => handleOpenModal("url_4")}>
-          <img src="/images/home/tocador-tablet-8.png" alt="" />
+          {/* <img src="/images/home/tocador-tablet-8.png" alt="" /> */}
         </StyledItemTocador>
         <StyledItemRetrato
           className="retrato"

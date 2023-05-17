@@ -23,6 +23,8 @@ export const StyledContent = styled.footer`
         .boll {
             ${tw`hidden`}
         }
+
+        
     }
 
     @media (max-width: 600px) {
@@ -46,6 +48,12 @@ export const StyledContent = styled.footer`
 
         .hola {
             ${tw`text-justify`}
+        }
+
+        .responsive {
+            height: 40%;
+            left: 82.7%;
+            top: 12%;
         }
     }
 `;

@@ -174,7 +174,7 @@ export const StyledContentHCP = styled.div`
 `;
 
 export const StyledContentExperenceCreator = styled.div`
-  ${tw`w-[34.4%] h-[21.5%] absolute top-[68.5%] left-[9%] flex justify-center items-center cursor-pointer`}
+  ${tw`w-[34.4%] h-[21.5%] absolute top-[68.5%] left-[9%] flex justify-center items-center`}
 
   @media (max-width: 1024px) {
     ${tw`top-[70.6%] left-[10.1%] w-[41.3%] h-[24%]`}

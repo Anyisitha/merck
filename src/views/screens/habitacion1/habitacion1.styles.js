@@ -75,8 +75,8 @@ export const StyledItem = styled.div`
 `;
 
 export const StyledItemSilla = styled.div`
-  ${tw`absolute w-[17.1%] left-[5.6%] top-[60.2%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;  
+  ${tw`absolute w-[11.7%] left-[13.3%] top-[87.2%] h-[6%] cursor-pointer`}
+  /* animation: ${fadeInOut} 15s ease-in-out infinite;   */
 
   @media (max-width: 1024px) {
     ${tw`left-[3.8%] top-[65.4%] h-[29%] w-[33.1%]`}
@@ -97,8 +97,8 @@ export const StyledItemSilla = styled.div`
 `;
 
 export const StyledItemRetrato = styled.div`
-  ${tw`absolute w-[15.7%] left-[41.8%] top-[35%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;
+  ${tw`absolute w-[13.8%] left-[42.8%] top-[55%] h-[6%] cursor-pointer`}
+  /* animation: ${fadeInOut} 15s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
     ${tw`left-[43%] top-[27.2%] w-[22.4%] h-[16%]`}
@@ -119,7 +119,7 @@ export const StyledItemRetrato = styled.div`
 
 export const StyledItemCama = styled.div`
   ${tw`absolute w-[28.7%] left-[33.7%] top-[63.1%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;
+  /* animation: ${fadeInOut} 15s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
     ${tw`left-[30%] top-[39.2%] w-[47.4%] h-[30%]`}
@@ -139,8 +139,8 @@ export const StyledItemCama = styled.div`
 `;
 
 export const StyledItemLampara = styled.div`
-  ${tw`absolute w-[16.7%] left-[57.8%] top-[59.1%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;
+  ${tw`absolute w-[16.7%] left-[57.8%] top-[79.1%] h-[10%] cursor-pointer`}
+  /* animation: ${fadeInOut} 15s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
     ${tw`left-[32.7%] top-[53.4%] w-[37.3%] h-[37.2%]`}
@@ -160,8 +160,8 @@ export const StyledItemLampara = styled.div`
 `;
 
 export const StyledItemTocador = styled.div`
-  ${tw`absolute w-[16.6%] left-[70.1%] top-[40.6%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;
+  ${tw`absolute w-[16.6%] left-[70.1%] top-[40.6%] h-[6%] cursor-pointer`}
+  /* animation: ${fadeInOut} 15s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
     ${tw`left-[69%] top-[28.3%] w-[28.3%] h-[45.7%]`}
@@ -184,11 +184,11 @@ export const StyledItemTocador = styled.div`
 
 /** Puertas atras siguiente */
 export const StyledItemPuerta = styled.div`
-  ${tw`w-[11%] bottom-[4%] left-[-2%] absolute  cursor-pointer`}
+  ${tw`w-[11%] bottom-[5%] left-[-2%] absolute  cursor-pointer`}
 `;
 
 export const StyledItemSiguiente = styled.div`
-  ${tw`w-[11%] bottom-[4%] right-[-1.9%] absolute  cursor-pointer`}
+  ${tw`w-[11%] bottom-[5%] right-[-1.9%] absolute  cursor-pointer`}
 `;
 /** Puertas atras siguiente */
 

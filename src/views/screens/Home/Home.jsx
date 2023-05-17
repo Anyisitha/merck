@@ -251,6 +251,9 @@ Home.CreatorZone = () => {
           <StyledTitle className="trata">Creador de experiencias</StyledTitle>
         </div>
       </div>
+      <div className="absolute w-[20%]">
+          <img src="/images/home/candado.png" alt="candado" />
+        </div>
     </StyledContentExperenceCreator>
   );
 };
@@ -301,11 +304,6 @@ Home.Mobile = ({ setOpenModal }) => {
           className="h-[23px] absolute bottom-0"
         />
       </div>
-
-      <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
-            className="alianzas  absolute w-[12%] h-[11%] top-[27%] left-[2.7%]"
-            
-          ></a>
     </StyledContent>
   );
 };

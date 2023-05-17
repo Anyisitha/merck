@@ -15,6 +15,21 @@ export default function Footer() {
               height={34}
             />
 
+            {/* instagram */}
+            <div >
+              <a
+                href="https://www.instagram.com/casadelaesclerosislatam/"
+                target="_blank"
+              >
+                <img
+                  className="alianzas responsive absolute w-[-5%] h-[64%] top-[27%] left-[3.7%]"
+                  src="/images/home/in.webp"
+                  alt=""
+                />
+              </a>
+            </div>
+            {/* instagram */}
+
             {/* <div className="flex gap-[25px]">
               <span className="text-[8px]">Terminos y condiciones</span>
               <span className="text-[8px]">Declaracion de privacidad</span>
@@ -30,14 +45,18 @@ export default function Footer() {
                 residentes en Ecuador, Colombia. En ningún caso la información
                 contenida en la misma sustituye la consulta, el tratamiento y
                 las recomendaciones del profesional de la salud. Conozca más
-                sobre MERCK en <a href="https://www.merckgroup.com/de" target="_blank">www.merckgroup.com/de</a> 2023 /Grupo Merck © Todos
-                los derechos reservados. CO-NONNI-00160
+                sobre MERCK en{" "}
+                <a href="https://www.merckgroup.com/de" target="_blank">
+                  www.merckgroup.com/de
+                </a>{" "}
+                2023 /Grupo Merck © Todos los derechos reservados.
+                CO-NONNI-00160
               </p>
             </div>
             <div className="flex gap-[25px]">
               <a
                 target="_blank"
-                href="https://eml.com.co/merck/Te%CC%81rminos%20y%20Condiciones%20Generales%20de%20MERCK.pdf"
+                href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf"
                 className="text-[8px]"
               >
                 Terminos y condiciones
