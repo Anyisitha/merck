@@ -75,7 +75,7 @@ export const StyledItem = styled.div`
 `;
 
 export const StyledItemSilla = styled.div`
-  ${tw`absolute w-[11.7%] left-[13.3%] top-[87.2%] h-[6%] cursor-pointer`}
+  ${tw`absolute w-[11.7%] left-[10.3%] top-[85.2%] h-[6%] cursor-pointer`}
   /* animation: ${fadeInOut} 15s ease-in-out infinite;   */
 
   @media (max-width: 1024px) {

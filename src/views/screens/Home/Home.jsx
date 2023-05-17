@@ -252,7 +252,7 @@ Home.CreatorZone = () => {
           <StyledTitle className="trata">Creador de experiencias</StyledTitle>
         </div>
       </div>
-      <div className="absolute w-[5%] left-[92%] top-[8%]">
+      <div className="absolute w-[8%] left-[47%] top-[9%]">
           <img src="/images/home/candado.png" alt="candado" />
         </div>
         
