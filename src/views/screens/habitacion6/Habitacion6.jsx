@@ -57,7 +57,7 @@ export default function Habitacion6() {
 
           <StyledItemBotton3
             className="boton2"
-            onClick={() => (window.location.href = "/habitacion-4")}
+            onClick={() => (window.location.href = "")}
           ></StyledItemBotton3>
 
           {/* <StyledItemBotton4
