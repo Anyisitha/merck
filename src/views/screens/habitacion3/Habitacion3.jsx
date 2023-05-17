@@ -56,7 +56,7 @@ export default function Habitacion3() {
             </StyledItemPuerta>
             <StyledItemSiguiente
               className="puerta"
-              onClick={() => (window.location.href = "/habitacion-6")}
+              onClick={() => (window.location.href = "/habitacion-4")}
             >
               <img src="/images/home/puerta-siguiente.png" alt="" />
             </StyledItemSiguiente>
@@ -75,7 +75,7 @@ export default function Habitacion3() {
 
           <StyledItemBotton3
             className="boton2"
-            onClick={() => (window.location.href = "")}
+            onClick={() => (window.location.href = "/habitacion-4")}
           ></StyledItemBotton3>
 <StyledItemBotton4
             className="boton2"
