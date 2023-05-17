@@ -6,8 +6,6 @@ import {
   StyledItemBotton1,
   StyledItemBotton2,
   StyledItemBotton3,
-  StyledItemBotton4,
-  StyledItemBotton5,
   StyledItemFarol,
   StyledItemFarol1,
   StyledItemMueble,
@@ -72,7 +70,7 @@ export default function Habitacion5() {
             <StyledItemRecor className="mueble ">
               <img src="/images/home/tunes.webp" alt="" />
             </StyledItemRecor>
-            <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[10%] h-[5%] top-[62%] left-[54%]">
+            <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" rel="noreferrer" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[10%] h-[5%] top-[62%] left-[54%]">
               Jugar
             </a>
           </div>
@@ -141,7 +139,7 @@ Habitacion5.Mobile = () => {
           className="puerta"
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
-        <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[51%] left-[71%]">
+        <a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" rel="noreferrer" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[51%] left-[71%]">
               Jugar
             </a>
       </div>
@@ -171,7 +169,7 @@ Habitacion5.Tablet = () => {
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
 
-<a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[43%] left-[68%]">
+<a href="https://drive.google.com/file/d/1-o7kgslrFDMYoTUHhypf1-D0cTTKx7mV/view?usp=drive_web" rel="noreferrer" target="_blank" className="flex justify-center items-center text-[#fff] rounded-[10px] bg-[#e72e8a] absolute w-[18%] h-[5%] top-[43%] left-[68%]">
               Jugar
             </a>
       </div>

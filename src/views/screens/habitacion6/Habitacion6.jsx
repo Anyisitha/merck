@@ -6,17 +6,8 @@ import {
   StyledItemBotton1,
   StyledItemBotton2,
   StyledItemBotton3,
-  StyledItemBotton4,
-  StyledItemBotton5,
-  StyledItemFarol,
-  StyledItemFarol1,
-  StyledItemMueble,
-  StyledItemPantalla,
   StyledItemPuerta,
-  StyledItemRecor,
   StyledItemSiguiente,
-  StyledItemTv,
-  StyledItemTv1,
 } from "./habitacion6.styles";
 
 export default function Habitacion6() {
@@ -48,7 +39,7 @@ export default function Habitacion6() {
               <img src="/images/home/puerta-siguiente.png" alt="" />
             </StyledItemSiguiente>
 
-            <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[27%] h-[14%] top-[43%] left-[34%]">
+            <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" rel="noreferrer" target="_blank" className=" absolute w-[27%] h-[14%] top-[43%] left-[34%]">
               
             </a>
           </div>
@@ -103,7 +94,7 @@ Habitacion6.Mobile = () => {
         ></StyledColor1>
       </div>
 
-      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
+      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" rel="noreferrer" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
               
               </a>
       
@@ -128,7 +119,7 @@ Habitacion6.Tablet = () => {
         ></StyledColor1>
       </div>
 
-      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
+      <a href="https://eml.com.co/MerckPrueba/RUTA%20DEL%20PACIENTE%20CON%20ESCLEROSIS%20MULTIPLE%20COLOMBIA%20Y%20ECUADOR.pdf" rel="noreferrer" target="_blank" className=" absolute w-[39%] h-[14%] top-[23%] left-[32%]">
              </a>
     </Fragment>
   );

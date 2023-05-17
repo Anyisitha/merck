@@ -46,7 +46,7 @@ export default function Home() {
             alt="pasto"
             className="absolute bottom-[8%] w-[77%] left-[7%]"
           />
-          <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
+          <a href="https://www.instagram.com/casadelaesclerosislatam/" rel="noreferrer" target="_blank"
             className="alianzas  absolute w-[6%] h-[11%] top-[31%] left-[2.7%]"
             
           ></a>
@@ -326,7 +326,7 @@ Home.Tablet = ({ setOpenModal }) => {
           className="h-[23px] absolute bottom-0"
         />
       </div>
-      <a href="https://www.instagram.com/casadelaesclerosislatam/" target="_blank"
+      <a href="https://www.instagram.com/casadelaesclerosislatam/" rel="noreferrer" target="_blank"
             className="alianzas  absolute w-[12%] h-[11%] top-[27%] left-[2.7%]"
             
           ></a>

@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { Fragment } from "react";
 import {
   StyledContentModal,
-  StyledIframe,
   StyledModalContent,
   StyledOverlay,
 } from "./Modal-image.styles";

@@ -34,21 +34,21 @@ const Modal = ({ url, open, onClose }) => {
                     <div className="flex gap-[25px]">
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf"
+                        href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf" rel="noreferrer"
                         className="text-[12px] text-[#512583] font-semibold"
                       >
                         Terminos y condiciones
                       </a>
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Politica%20pirvacidad.pdf"
+                        href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" rel="noreferrer"
                         className="text-[12px] text-[#512583] font-semibold"
                       >
                         Declaracion de privacidad
                       </a>
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf"
+                        href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" rel="noreferrer"
                         className="text-[12px] text-[#512583] font-semibold"
                       >
                         Politicas de cookies

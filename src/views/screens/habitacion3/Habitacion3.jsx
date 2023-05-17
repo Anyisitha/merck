@@ -7,7 +7,6 @@ import {
   StyledItemBotton2,
   StyledItemBotton3,
   StyledItemBotton4,
-  StyledItemBotton5,
   StyledItemCortina,
   StyledItemCuadroRetrato,
   StyledItemPuerta,

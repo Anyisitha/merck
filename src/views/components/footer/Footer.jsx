@@ -19,6 +19,7 @@ export default function Footer() {
             <div >
               <a
                 href="https://www.instagram.com/casadelaesclerosislatam/"
+                rel="noreferrer"
                 target="_blank"
               >
                 <img
@@ -46,7 +47,7 @@ export default function Footer() {
                 contenida en la misma sustituye la consulta, el tratamiento y
                 las recomendaciones del profesional de la salud. Conozca más
                 sobre MERCK en{" "}
-                <a href="https://www.merckgroup.com/de" target="_blank">
+                <a href="https://www.merckgroup.com/de" target="_blank" rel="noreferrer">
                   www.merckgroup.com/de
                 </a>{" "}
                 2023 /Grupo Merck © Todos los derechos reservados.
@@ -57,27 +58,28 @@ export default function Footer() {
               <a
                 target="_blank"
                 href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf"
+                rel="noreferrer"
                 className="text-[8px]"
               >
                 Terminos y condiciones
               </a>
               <a
                 target="_blank"
-                href="https://eml.com.co/merck/Politica%20pirvacidad.pdf"
+                href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" rel="noreferrer"
                 className="text-[8px]"
               >
                 Declaracion de privacidad
               </a>
               <a
                 target="_blank"
-                href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf"
+                href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" rel="noreferrer"
                 className="text-[8px]"
               >
                 Politicas de cookies
               </a>
               <a
                 target="_blank"
-                href="https://www.casadelaem.com/"
+                href="https://www.casadelaem.com/" rel="noreferrer"
                 className="text-[8px]"
               >
                 Guia instagram de Merck

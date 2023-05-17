@@ -7,10 +7,8 @@ import {
   StyledItemBotton2,
   StyledItemBotton3,
   StyledItemBotton4,
-  StyledItemBotton5,
   StyledItemHojas,
   StyledItemLibros,
-  StyledItemPc,
   StyledItemPuerta,
   StyledItemSiguiente,
 } from "./habitacion4.styles";

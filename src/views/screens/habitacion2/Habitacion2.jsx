@@ -9,7 +9,6 @@ import {
   StyledItemBotton2,
   StyledItemBotton3,
   StyledItemBotton4,
-  StyledItemBotton5,
   StyledColor,
   StyledColor1,
   StyledChickend,
