@@ -227,7 +227,7 @@ Home.Testimonials = () => {
       </div>
     </StyledContentTestimonials>
   );
-};
+};    
 
 Home.MyHCP = () => {
   return (
