@@ -46,6 +46,7 @@ export default function Home() {
             alt="pasto"
             className="absolute bottom-[8%] w-[77%] left-[7%]"
           />
+          
           <a href="https://www.instagram.com/casadelaesclerosislatam/" rel="noreferrer" target="_blank"
             className="alianzas  absolute w-[6%] h-[11%] top-[31%] left-[2.7%]"
             
