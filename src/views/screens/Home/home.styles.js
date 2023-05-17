@@ -132,7 +132,7 @@ export const StyledContentTestimonials = styled.div`
 `;
 
 export const StyledContentHCP = styled.div`
-  ${tw`w-[18.5%] h-[21.6%] absolute top-[45.3%] left-[62.8%] flex justify-center items-center cursor-pointer`}
+  ${tw`w-[18.5%] h-[21.6%] absolute top-[45.3%] left-[62.8%] flex justify-center items-center `}
 
   @media (max-width: 1024px) {
     ${tw`top-[48.6%] left-[53.6%] w-[41.3%] h-[21%]`}

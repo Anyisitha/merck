@@ -51,8 +51,8 @@ export const StyledContent = styled.footer`
         }
 
         .responsive {
-            height: 40%;
-            left: 82.7%;
+            height: 30%;
+            left: 84.7%;
             top: 12%;
         }
     }

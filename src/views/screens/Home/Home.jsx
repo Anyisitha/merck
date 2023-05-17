@@ -231,10 +231,10 @@ Home.Testimonials = () => {
 
 Home.MyHCP = () => {
   return (
-    <StyledContentHCP onClick={() => (window.location.href = "/habitacion-4")}>
+    <StyledContentHCP >
       <div className="parent">
         <div className="child">
-          <StyledTitle className="trata">Encuentra un especialista</StyledTitle>
+          <StyledTitle className="trata">Escucha al especialista</StyledTitle>
         </div>
       </div>
     </StyledContentHCP>
@@ -251,9 +251,10 @@ Home.CreatorZone = () => {
           <StyledTitle className="trata">Creador de experiencias</StyledTitle>
         </div>
       </div>
-      <div className="absolute w-[20%]">
+      <div className="absolute w-[5%] left-[92%] top-[8%]">
           <img src="/images/home/candado.png" alt="candado" />
         </div>
+        
     </StyledContentExperenceCreator>
   );
 };

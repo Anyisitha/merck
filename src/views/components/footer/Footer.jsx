@@ -22,7 +22,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <img
-                  className="alianzas responsive absolute w-[-5%] h-[64%] top-[27%] left-[3.7%]"
+                  className="alianzas responsive absolute w-[-5%] h-[54%] top-[27%] left-[4.7%]"
                   src="/images/home/in.webp"
                   alt=""
                 />
@@ -74,6 +74,13 @@ export default function Footer() {
                 className="text-[8px]"
               >
                 Politicas de cookies
+              </a>
+              <a
+                target="_blank"
+                href="https://www.casadelaem.com/"
+                className="text-[8px]"
+              >
+                Guia instagram de Merck
               </a>
             </div>
           </div>
