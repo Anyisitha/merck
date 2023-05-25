@@ -31,7 +31,7 @@ const Modal = ({ url, open, onClose }) => {
                     frameborder="0"
                     title="blog"
                     allowfullscreen
-                  ></StyledIframe>
+                  ></StyledIframe>    
                 </StyledContentModal>
                 <div class="bg-gray-50 px-4 py-3 sm:flex sm:justify-between items-center sm:px-6">
                   <div>
@@ -44,7 +44,7 @@ const Modal = ({ url, open, onClose }) => {
                       >
                         {
                           width > 1024 && <img
-                          className="alianzas responsive absolute w-[-5%] h-[4%] top-[87.4%] left-[76.7%]"
+                          className="alianzas responsive absolute w-[-5%] h-[4%] top-[93.4%] left-[76.7%]"
                           src="/images/home/instagram111.webp"
                           alt=""
                         />
