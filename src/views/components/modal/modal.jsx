@@ -72,7 +72,7 @@ const Modal = ({ url, open, onClose }) => {
                         rel="noreferrer"
                         className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
-                        Politicas de cookies
+                        Políticas de cookies
                       </a>
                       <a
                         target="_blank"

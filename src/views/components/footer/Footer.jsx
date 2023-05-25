@@ -75,7 +75,7 @@ export default function Footer() {
                 href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" rel="noreferrer"
                 className="text-[8px]"
               >
-                Politicas de cookies
+                Políticas de cookies
               </a>
               <a
                 target="_blank"
