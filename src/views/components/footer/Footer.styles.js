@@ -50,10 +50,5 @@ export const StyledContent = styled.footer`
             ${tw`text-justify`}
         }
 
-        .responsive {
-            height: 30%;
-            left: 84.7%;
-            top: 12%;
-        }
     }
-`;
+` ;
