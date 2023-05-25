@@ -53,8 +53,8 @@ export const StyledContent = styled.section`
 
 /** Imagenes animadas */
 export const StyledItemFuego = styled.div`
-  ${tw`absolute  left-[55.1%] top-[45.2%] w-[17.6%] cursor-pointer`}
-  animation: ${fadeInOut} 9s ease-in-out infinite;
+  ${tw`absolute  left-[55.1%] top-[60.2%] w-[17.6%] h-[5%] cursor-pointer`}
+  /* animation: ${fadeInOut} 9s ease-in-out infinite; */
 `;
 
 export const StyledItemPollo = styled.div`

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import {
   StyledContentModal,
   StyledIframe,
@@ -8,6 +8,10 @@ import {
 } from "./Modal.styles";
 
 const Modal = ({ url, open, onClose }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  }, [])
   return (
     <Fragment>
       {open && (
@@ -31,27 +35,52 @@ const Modal = ({ url, open, onClose }) => {
                 </StyledContentModal>
                 <div class="bg-gray-50 px-4 py-3 sm:flex sm:justify-between items-center sm:px-6">
                   <div>
-                    <div className="flex gap-[25px]">
+                    <div className="flex gap-[25px] md:gap-[10px] xs:gap-0">
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf" rel="noreferrer"
-                        className="text-[12px] text-[#512583] font-semibold"
+                        href="https://www.casadelaem.com/"
+                        rel="noreferrer"
+                        className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
+                      >
+                        {
+                          width > 1024 && <img
+                          className="alianzas responsive absolute w-[-5%] h-[4%] top-[87.4%] left-[76.7%]"
+                          src="/images/home/instagram111.webp"
+                          alt=""
+                        />
+                        }
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://eml.com.co/merck/Terminos-y-condiciones-Merck.pdf"
+                        rel="noreferrer"
+                        className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
                         Terminos y condiciones
                       </a>
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" rel="noreferrer"
-                        className="text-[12px] text-[#512583] font-semibold"
+                        href="https://eml.com.co/merck/Politica%20pirvacidad.pdf"
+                        rel="noreferrer"
+                        className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
                         Declaracion de privacidad
                       </a>
                       <a
                         target="_blank"
-                        href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf" rel="noreferrer"
-                        className="text-[12px] text-[#512583] font-semibold"
+                        href="https://eml.com.co/merck/Politica%20de%20Cookies.pdf"
+                        rel="noreferrer"
+                        className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
                         Politicas de cookies
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://www.casadelaem.com/"
+                        rel="noreferrer"
+                        className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
+                      >
+                        Guia instagram de Merck
                       </a>
                     </div>
                   </div>
@@ -77,3 +106,7 @@ Modal.propTypes = {
 };
 
 export default Modal;
+
+
+
+

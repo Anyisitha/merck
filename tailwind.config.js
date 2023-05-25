@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{jsx,js,tsx,ts}"],
   theme: {
+    screens: {
+      "xs": {"max": "638px"}
+    },
     extend: {
       backgroundImage: {
       },

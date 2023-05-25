@@ -53,7 +53,7 @@ export const StyledContent = styled.section`
 
 /** Imagenes animadas */
 export const StyledItemCortina = styled.div`
-  ${tw`absolute right-[36.7%] top-[44.7%] w-[47.9%] cursor-pointer`}
+  ${tw`absolute right-[36.7%] top-[79.7%] w-[47.9%] h-[5%] cursor-pointer`}
   animation: ${fadeInOut} 10s ease-in-out infinite;
 
   @media (max-width: 1024px) {

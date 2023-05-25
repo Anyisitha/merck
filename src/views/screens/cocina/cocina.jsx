@@ -29,27 +29,30 @@ export default function Cacina() {
     setOpenModalIframe(true);
   };
 
-  useEffect(() => {   
-    window.addEventListener("resize", () => setWidth(window.innerWidth));
-  }, []);   
-  
-  let query2 = new URLSearchParams(window.location.search).get("popup2");
-  
   useEffect(() => {
-    if(query2 === "true") {
-      handleOpenModal("url_3")
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+      setOpenModalIframe(false);
+    });
+  }, []);
+
+  let query2 = new URLSearchParams(window.location.search).get("popup2");
+
+  useEffect(() => {
+    if (query2 === "true") {
+      handleOpenModal("url_3");
     }
-  }, [query2])
+  }, [query2]);
 
   return (
     <StyledContent>
-      {width > 1024 && (   
+      {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[6%]">
             <img src="/images/home/cocina.png" alt="" className="h-full" />
-            <StyledItemFuego className="cocina ">
+            <StyledItemFuego className="cocina" onClick={handleOpenModal}>
               <div className="relative">
-                <img src="/images/home/fuego.png" alt=""  onClick={handleOpenModal} />
+                {/* <img src="/images/home/fuego.png" alt=""  onClick={handleOpenModal} /> */}
               </div>
             </StyledItemFuego>
             <StyledItemPollo className="pollo ">
@@ -101,17 +104,21 @@ export default function Cacina() {
         </Fragment>
       )}
 
-      {width <= 767 && <Cacina.Mobile
-      handleOpenModal={handleOpenModal}
-       openModalIframe={openModalIframe}
-       handleCloseModal={handleCloseModal}
-      />}
-      {width >= 768 && width <= 1024 && <Cacina.Tablet
-      handleOpenModal={handleOpenModal}
-       openModalIframe={openModalIframe}
-       handleCloseModal={handleCloseModal}
-      />}
-       <Modal
+      {width <= 767 && (
+        <Cacina.Mobile
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      {width >= 768 && width <= 1024 && (
+        <Cacina.Tablet
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia4/index.html"
@@ -120,9 +127,7 @@ export default function Cacina() {
   );
 }
 
-Cacina.Mobile = (
-  {handleOpenModal}
-) => {
+Cacina.Mobile = ({ handleOpenModal, openModalIframe, handleCloseModal }) => {
   return (
     <Fragment>
       <div className="container">
@@ -130,29 +135,28 @@ Cacina.Mobile = (
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
         ></StyledColor>
-        
+
         <StyledItemPollo className="pollo ">
           <img src="/images/home/pollo-asado-gif-dim.gif" alt="" />
         </StyledItemPollo>
-        <div className="absolute top-[71%] left-[49%]  w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
+        <div
+          className="absolute top-[71%] left-[49%]  w-[26%] h-[4%]"
+          onClick={() => handleOpenModal(true)}
+        ></div>
       </div>
-      {/* <Modal  
+      <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia4/index.html"
-      /> */}
+      />
     </Fragment>
   );
 };
 
-Cacina.Tablet = (
-   handleOpenModal,
-  openModalIframe,
-  handleCloseModal,
-) => {
+Cacina.Tablet = ({handleOpenModal, openModalIframe, handleCloseModal}) => {
   return (
     <Fragment>
-      <div className="container">
+      <div className="container" onClick={() => handleOpenModal(true)} >
         <StyledColor
           className="puerta"
           onClick={() => (window.location.href = "/habitacion-2")}
@@ -162,7 +166,7 @@ Cacina.Tablet = (
           <img src="/images/home/pollo-asado-gif-dim.gif" alt="" />
         </StyledItemPollo>
       </div>
-       <Modal
+      <Modal
         open={openModalIframe}
         onClose={handleCloseModal}
         url="https://eml.com.co/MerckPrueba/infografia4/index.html"

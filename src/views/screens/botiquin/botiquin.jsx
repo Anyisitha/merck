@@ -50,8 +50,8 @@ export default function Botiquin() {
             <StyledItemMedicamento className="medicamentos ">
               <img src="/images/home/medicamentos.png" alt="" />
             </StyledItemMedicamento>
-            <StyledItemBotonInfo className="medicamentos ">
-              <img src="/images/home/boton-info.png" alt="" onClick={() => handleOpenModal(true)}/>
+            <StyledItemBotonInfo className="medicamentos " onClick={() => handleOpenModal(true)}>
+              {/* <img src="/images/home/boton-info.png" alt="" onClick={() => handleOpenModal(true)}/> */}
             </StyledItemBotonInfo>
 
             {/* Puertas navegacion*/}

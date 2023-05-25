@@ -62,7 +62,8 @@ export default function Habitacion2() {
               <img src="/images/home/botiquin-gif.png" alt="" />
             </StyledItemBotiquin>
             <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
-              <img src="/images/home/libros.png" alt="" />
+             
+              {/* <img src="/images/home/libros.png" alt="" /> */}
             </StyledItemLibros>
 
             {/* Puertas navegacion*/}
@@ -149,7 +150,7 @@ Habitacion2.Mobile = ({
           <img src="/images/home/botiquin-movil.png" alt="" />
         </StyledItemBotiquin>
         <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
-          <img src="/images/home/libros.png" alt="" />
+          {/* <img src="/images/home/libros.png" alt="" /> */}
         </StyledItemLibros>
         <StyledColor
           className="puerta"
@@ -193,7 +194,7 @@ Habitacion2.Tablet = ({
           <img src="/images/home/botiquin-tablet-8.png" alt="" />
         </StyledItemBotiquin>
         <StyledItemLibros className="botiquin" onClick={() => handleOpenModal()}>
-          <img src="/images/home/libros.png" alt="" />
+          {/* <img src="/images/home/libros.png" alt="" /> */}
         </StyledItemLibros>
 
         <StyledChickend

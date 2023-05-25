@@ -61,8 +61,8 @@ export default function Jardin() {
               <img src="/images/home/pelota.png" alt="" />
             </StyledItemPelota>
 
-            <StyledItemBotonInfo1 className="medicamentos ">
-              <img src="/images/home/boton-info-1.png" alt="" onClick={() => handleOpenModal()} />
+            <StyledItemBotonInfo1 className="medicamentos " onClick={() => handleOpenModal()}>
+              {/* <img src="/images/home/boton-info-1.png" alt="" onClick={() => handleOpenModal()} /> */}
             </StyledItemBotonInfo1>
 
             {/* Puertas navegacion*/}
@@ -142,7 +142,7 @@ Jardin.Mobile = (
         <div className="shadow"></div>
 
         <StyledItemBotonInfo1 className="medicamentos ">
-              <img src="/images/home/boton-info-1.png" alt="" />
+              {/* <img src="/images/home/boton-info-1.png" alt="" /> */}
             </StyledItemBotonInfo1>
         <StyledColor
           className="puerta"
@@ -173,8 +173,8 @@ Jardin.Tablet = (
         </StyledItemPelota>
         <div className="shadow"></div>
         <div className="absolute top-[74%] left-[37%]  w-[26%] h-[4%]" ></div>
-        <StyledItemBotonInfo1 className="medicamentos ">
-              <img src="/images/home/boton-info-1.png" alt="" onClick={handleOpenModal} />
+        <StyledItemBotonInfo1 className="medicamentos " onClick={handleOpenModal}>
+              {/* <img src="/images/home/boton-info-1.png" alt="" onClick={handleOpenModal} /> */}
             </StyledItemBotonInfo1>
         <StyledColor
           className="puerta"

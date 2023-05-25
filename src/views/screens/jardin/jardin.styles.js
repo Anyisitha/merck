@@ -134,8 +134,8 @@ export const StyledItemPelota = styled.div`
 `;
 
 export const StyledItemBotonInfo1 = styled.div`
-  ${tw`absolute  left-[39.8%] top-[93.6%] w-[13.1%] cursor-pointer`}
-  animation: ${fadeInOut} 15s ease-in-out infinite;
+  ${tw`absolute  left-[39.8%] top-[93.6%] w-[13.1%] h-[5%] cursor-pointer`}
+  /* animation: ${fadeInOut} 15s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
     ${tw`left-[37%] top-[74.1%] w-[29.5%] h-[5%]`}

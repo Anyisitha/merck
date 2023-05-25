@@ -23,6 +23,7 @@ export const StyledIframe = styled.iframe`
     @media (max-height: 768px) and (min-width: 1280px) {
         ${tw`h-[500px]`}
     }
+    
 `;
 
 export const StyledContentModal = styled.div`
@@ -30,5 +31,12 @@ export const StyledContentModal = styled.div`
 
     @media (max-height: 768px) and (min-width: 1280px) {
         ${tw`pt-2`}
+        .responsive {
+            height: 30%;
+            left: 84.7%;
+            top: 12%;
+        }
     }
 `;
+
+

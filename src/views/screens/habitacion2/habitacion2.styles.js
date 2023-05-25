@@ -75,11 +75,11 @@ export const StyledItemBotiquin = styled.div`
 `;
 
 export const StyledItemLibros = styled.div`
-  ${tw`absolute  left-[25.8%] top-[59.6%] w-[17.3%] cursor-pointer`}
-  animation: ${fadeInOut} 8s ease-in-out infinite;
+  ${tw`absolute left-[26.8%] top-[70.3%] w-[14.3%] h-[5%] cursor-pointer`}
+  /* animation: ${fadeInOut} 8s ease-in-out infinite; */
 
   @media (max-width: 1024px) {
-    ${tw`left-[16.7%] top-[41.8%] w-[58.1%] h-[30%]`}
+    ${tw`left-[16.7%] top-[41.8%] w-[58.1%] h-[30%] `}
 
     img {
       ${tw`w-[88%] h-[72%]`}

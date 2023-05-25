@@ -37,11 +37,11 @@ export default function Habitacion3() {
       {width > 1024 && (
         <Fragment>
           <div className="h-[88%] relative bottom-[20px] ml-[4%]">
-            <img src="/images/home/testimonial.png" alt="" className="h-full"  />
+            <img src="/images/home/testimonial.png" alt="" className="h-full" />
 
             {/* Animaciones */}
-            <StyledItemCortina className="botiquin ">
-              <img src="/images/home/sofa.png" alt="" onClick={handleOpenModal} />
+            <StyledItemCortina className="botiquin " onClick={handleOpenModal}>
+              {/* <img src="/images/home/sofa.png" alt="" onClick={handleOpenModal} /> */}
             </StyledItemCortina>
             <StyledItemCuadroRetrato className="botiquin ">
               <img src="/images/home/cuadro-retrato.png" alt="" />
@@ -77,12 +77,10 @@ export default function Habitacion3() {
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-4")}
           ></StyledItemBotton3>
-<StyledItemBotton4
+          <StyledItemBotton4
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-6")}
           ></StyledItemBotton4>
-
-          
 
           {/* <StyledItemBotton4
             className="boton2"
@@ -96,16 +94,20 @@ export default function Habitacion3() {
         </Fragment>
       )}
 
-      {width <= 767 && <Habitacion3.Mobile
-        handleOpenModal={handleOpenModal}
-        openModalIframe={openModalIframe}
-        handleCloseModal={handleCloseModal}
-      />}
-      {width >= 768 && width <= 1024 && <Habitacion3.Tablet
-        handleOpenModal={handleOpenModal}
-        openModalIframe={openModalIframe}
-        handleCloseModal={handleCloseModal}
-      />}
+      {width <= 767 && (
+        <Habitacion3.Mobile
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
+      {width >= 768 && width <= 1024 && (
+        <Habitacion3.Tablet
+          handleOpenModal={handleOpenModal}
+          openModalIframe={openModalIframe}
+          handleCloseModal={handleCloseModal}
+        />
+      )}
 
       <Modal
         open={openModalIframe}
@@ -116,9 +118,7 @@ export default function Habitacion3() {
   );
 }
 
-Habitacion3.Mobile = (
-  {handleOpenModal}
-) => {
+Habitacion3.Mobile = ({ handleOpenModal }) => {
   return (
     <Fragment>
       <div className="container">
@@ -139,27 +139,29 @@ Habitacion3.Mobile = (
           className="puerta"
           onClick={() => (window.location.href = "/")}
         ></StyledColor1>
-        <div className="absolute top-[71%] left-[49%]  w-[26%] h-[4%]" onClick={() => handleOpenModal(true)}></div>
+        <div
+          className="absolute top-[71%] left-[49%]  w-[26%] h-[4%]"
+          onClick={() => handleOpenModal(true)}
+        ></div>
       </div>
     </Fragment>
   );
 };
-  
 
-Habitacion3.Tablet = (
+Habitacion3.Tablet = ({
   handleOpenModal,
   openModalIframe,
   handleCloseModal,
-) => {
+}) => {
   return (
     <Fragment>
-      <div className="container">
+      <div className="container" onClick={() => handleOpenModal(true)}>
         <StyledItemCortina className="botiquin ">
           <img src="/images/home/silla-tablet1-8.png" alt="" />
         </StyledItemCortina>
 
-        <StyledItemCuadroRetrato className="botiquin ">
-          <img src="/images/home/cuadro-tablet-version-8.png" alt="" />
+        <StyledItemCuadroRetrato className="botiquin " >
+          {/* <img src="/images/home/cuadro-tablet-version-8.png" alt="" /> */}
         </StyledItemCuadroRetrato>
 
         <StyledColor
