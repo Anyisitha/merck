@@ -3,7 +3,9 @@ module.exports = {
   content: ["./src/**/*.{jsx,js,tsx,ts}"],
   theme: {
     screens: {
-      "xs": {"max": "638px"}
+      "xs": {"max": "638px"},
+      "lg": {"min": "1024px"},
+      'sm': '640px',
     },
     extend: {
       backgroundImage: {
