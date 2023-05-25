@@ -61,14 +61,14 @@ export default function Footer() {
                 rel="noreferrer"
                 className="text-[8px]"
               >
-                Terminos y condiciones
+                Términos y condiciones
               </a>
               <a
                 target="_blank"
                 href="https://eml.com.co/merck/Politica%20pirvacidad.pdf" rel="noreferrer"
                 className="text-[8px]"
               >
-                Declaracion de privacidad
+                Declaración de privacidad
               </a>
               <a
                 target="_blank"
@@ -82,7 +82,7 @@ export default function Footer() {
                 href="https://www.casadelaem.com/" rel="noreferrer"
                 className="text-[8px]"
               >
-                Guia instagram de Merck
+                Guía instagram de Merck
               </a>
             </div>
           </div>

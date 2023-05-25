@@ -56,7 +56,7 @@ const Modal = ({ url, open, onClose }) => {
                         rel="noreferrer"
                         className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
-                        Terminos y condiciones
+                        Términos y condiciones
                       </a>
                       <a
                         target="_blank"
@@ -64,7 +64,7 @@ const Modal = ({ url, open, onClose }) => {
                         rel="noreferrer"
                         className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
-                        Declaracion de privacidad
+                        Declaración de privacidad
                       </a>
                       <a
                         target="_blank"
@@ -80,7 +80,7 @@ const Modal = ({ url, open, onClose }) => {
                         rel="noreferrer"
                         className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >
-                        Guia instagram de Merck
+                        Guía instagram de Merck
                       </a>
                     </div>
                   </div>
