@@ -38,7 +38,7 @@ const Modal = ({ url, open, onClose }) => {
                     <div className="flex gap-[25px] md:gap-[10px] xs:gap-0">
                       <a
                         target="_blank"
-                        href="https://www.casadelaem.com/"
+                        href="https://www.instagram.com/casadelaesclerosislatam/"
                         rel="noreferrer"
                         className="text-[12px] xs:text-[9px] text-[#512583] font-semibold"
                       >

@@ -97,10 +97,10 @@ export default function Cacina() {
             className="boton2"
             onClick={() => (window.location.href = "/habitacion-5")}
           ></StyledItemBotton5>
-          <StyledItemBotton6
+          {/* <StyledItemBotton6
             className="boton2"
             onClick={() => (window.location.href = "/alianzas")}
-          ></StyledItemBotton6>
+          ></StyledItemBotton6> */}
         </Fragment>
       )}
 
